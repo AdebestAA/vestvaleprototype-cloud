@@ -1,10 +1,30 @@
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { useRef } from 'react';
+import Hero from '@/components/Hero';
+import Navbar from '@/components/Navbar';
+
+
+export default function HomePage() {
+  const sections = {
+    navbar: useRef<HTMLElement>(null),
+    hero: useRef<HTMLElement>(null),
+    about: useRef<HTMLElement>(null),
+    products: useRef<HTMLElement>(null),
+    services: useRef<HTMLElement>(null),
+    testimonials: useRef<HTMLElement>(null),
+    contact: useRef<HTMLElement>(null),
+  };
+
+  const scrollToSection = (key: keyof typeof sections) => {
+    sections[key].current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div>
-      <Navbar/>
-    </div>
+    <main>
+      <Navbar  onNavClick={scrollToSection} />
+      <Hero ref={sections.hero} />
+      
+    </main>
   );
 }

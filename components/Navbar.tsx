@@ -1,22 +1,37 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { FaHome, FaHeart, FaShoppingCart, FaBars } from 'react-icons/fa';
-import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { FaHome, FaHeart, FaShoppingCart, FaBars } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
-const Navbar = () => {
+type SectionKey =
+  | "navbar"
+  | "hero"
+  | "about"
+  | "products"
+  | "services"
+  | "testimonials"
+  | "contact";
+
+interface NavbarProps {
+  onNavClick?: (section: SectionKey) => void;
+  // ...other props...
+}
+
+const navLinks: { label: string; section: SectionKey; href: string }[] = [
+  { label: "Home", section: "hero", href: "#hero" },
+  { label: "Properties", section: "products", href: "#products" },
+  { label: "About", section: "about", href: "#about" },
+  { label: "Services", section: "services", href: "#services" },
+  { label: "Testimonials", section: "testimonials", href: "#testimonials" },
+  { label: "Contact", section: "contact", href: "#contact" },
+];
+
+const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
-
-  const navLinks = [
-    { label: 'Home', href: '#' },
-    { label: 'Properties', href: '#properties' },
-    { label: 'Home Decor', href: '#appliances' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
-  ];
 
   return (
     <header className="bg-[#e6ccb2] sticky top-0 z-50 shadow-md">
@@ -31,8 +46,12 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <Link
-              key={link.href}
+              key={link.section}
               href={link.href}
+              onClick={(e) => {
+                e.preventDefault();
+                onNavClick?.(link.section);
+              }}
               className="text-[#9d6b53] font-medium hover:text-amber-900 transition"
             >
               {link.label}
@@ -48,7 +67,10 @@ const Navbar = () => {
           <Link href="#" className="text-[#9d6b53] hover:text-amber-900">
             <FaShoppingCart />
           </Link>
-          <button onClick={toggleMenu} className="md:hidden text-[#9d6b53] focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-[#9d6b53] focus:outline-none"
+          >
             <FaBars className="text-2xl" />
           </button>
         </div>
@@ -60,7 +82,7 @@ const Navbar = () => {
           <motion.div
             key="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden bg-[#9d6b53] text-white"
@@ -68,10 +90,14 @@ const Navbar = () => {
             <div className="px-4 py-2 space-y-3">
               {navLinks.map((link) => (
                 <Link
-                  key={link.href}
+                  key={link.section}
                   href={link.href}
                   className="block py-2 hover:bg-amber-900 px-2 rounded"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavClick?.(link.section);
+                    setIsOpen(false);
+                  }}
                 >
                   {link.label}
                 </Link>
