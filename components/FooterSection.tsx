@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { FaFacebookF, FaInstagram, FaPinterestP, FaYelp, FaHome } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import React from "react";
+import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const FooterSection = () => {
   return (
@@ -16,58 +17,146 @@ const FooterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Logo and About */}
           <div>
-            <div className="flex items-center mb-4">
-              <FaHome className="text-2xl text-amber-300 mr-2" />
+            <div className=" mb-4">
+              <Image
+                src="/logo icon 1 (1).png"
+                alt="logo icon 1 (1).png"
+                width={30}
+                height={60}
+              />
               <span className="text-xl font-bold text-amber-300">Vestvale</span>
             </div>
-            <p className="text-amber-100 mb-4">
-              Preserving the past, building the future. Vestvale specializes in historic properties and period-appropriate decor.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-amber-100 hover:text-white"><FaFacebookF /></a>
-              <a href="#" className="text-amber-100 hover:text-white"><FaInstagram /></a>
-              <a href="#" className="text-amber-100 hover:text-white"><FaPinterestP /></a>
-              <a href="#" className="text-amber-100 hover:text-white"><FaYelp /></a>
+            {/* Quick Links */}
+            <div className="mb-4">
+              <ul className="space-y-2">
+                <li>
+                  <a href="#about" className="text-amber-100 hover:text-white">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="text-amber-100 hover:text-white"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#service"
+                    className="text-amber-100 hover:text-white"
+                  >
+                    Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#properties"
+                    className="text-amber-100 hover:text-white"
+                  >
+                    Virtual Tour
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#appliances"
+                    className="text-amber-100 hover:text-white"
+                  >
+                    Home Decor
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#hero" className="text-amber-100 hover:text-white">Home</a></li>
-              <li><a href="#properties" className="text-amber-100 hover:text-white">Properties</a></li>
-              <li><a href="#appliances" className="text-amber-100 hover:text-white">Home Decor</a></li>
-              <li><a href="#about" className="text-amber-100 hover:text-white">About Us</a></li>
-              <li><a href="#contact" className="text-amber-100 hover:text-white">Contact</a></li>
-            </ul>
           </div>
 
           {/* Properties */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Properties</h3>
+            <h3 className="text-lg font-bold mb-4">Our Properties</h3>
             <ul className="space-y-2">
-              <li><a href="#properties" className="text-amber-100 hover:text-white">Apartments</a></li>
-              <li><a href="#properties" className="text-amber-100 hover:text-white">Cottages</a></li>
-              <li><a href="#properties" className="text-amber-100 hover:text-white">Brownstones</a></li>
-              <li><a href="#properties" className="text-amber-100 hover:text-white">Historic Homes</a></li>
+              <li>
+                <a
+                  href="#properties"
+                  className="text-amber-100 hover:text-white"
+                >
+                  3 Bedroom
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#properties"
+                  className="text-amber-100 hover:text-white"
+                >
+                  Great Vile Estate
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#properties"
+                  className="text-amber-100 hover:text-white"
+                >
+                  Rayna for Startups
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Home Decor */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Home Decor</h3>
+            <h3 className="text-lg font-bold mb-4">Home Decoration</h3>
             <ul className="space-y-2">
-              <li><a href="#appliances" className="text-amber-100 hover:text-white">Lighting</a></li>
-              <li><a href="#appliances" className="text-amber-100 hover:text-white">Wallpaper</a></li>
-              <li><a href="#appliances" className="text-amber-100 hover:text-white">Furniture</a></li>
-              <li><a href="#appliances" className="text-amber-100 hover:text-white">Kitchenware</a></li>
+              <li>
+                <a
+                  href="#appliances"
+                  className="text-amber-100 hover:text-white"
+                >
+                  Russia
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#appliances"
+                  className="text-amber-100 hover:text-white"
+                >
+                  Italy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#appliances"
+                  className="text-amber-100 hover:text-white"
+                >
+                  China
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-5 ">
+            <div className="flex space-x-4">
+              <a href="#" className="text-amber-100 hover:text-white">
+                <FaTwitter />
+              </a>
+              <a href="#" className="text-amber-100 hover:text-white">
+                <FaInstagram />
+              </a>
+
+              <a href="#" className="text-amber-100 hover:text-white">
+                <FaLinkedin />
+              </a>
+            </div>
+            <ul>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Cookie Policy</a></li>
+              <li><a href="">Security</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-amber-800 pt-6 text-center text-sm text-amber-100">
-          <p>&copy; {new Date().getFullYear()} Vestvale Homes & Decor. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Vestvale Homes & Decor. All rights
+            reserved.
+          </p>
         </div>
       </motion.div>
     </footer>

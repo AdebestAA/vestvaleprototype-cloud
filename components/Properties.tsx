@@ -14,7 +14,7 @@ const propertyData = [
     baths: 2,
     area: '1,850 sq.ft',
     image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2070&q=80',
+      '/image-09.svg',
     description: 'A beautifully restored loft with original hardwood floors and exposed brick walls.',
   },
   {
@@ -27,7 +27,7 @@ const propertyData = [
     baths: 3,
     area: '2,400 sq.ft',
     image:
-      'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=2070&q=80',
+      '/image-10.svg',
     description: 'Stunning brownstone with original details, fireplace, and private garden.',
   },
   {
@@ -40,7 +40,7 @@ const propertyData = [
     baths: 1,
     area: '1,200 sq.ft',
     image:
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2070&q=80',
+      '/image-11.svg',
     description: 'Charming cottage with vintage details, updated kitchen, and large backyard.',
   },
   {
@@ -53,7 +53,7 @@ const propertyData = [
     baths: 1,
     area: '1,200 sq.ft',
     image:
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2070&q=80',
+      '/image-11.svg',
     description: 'Charming cottage with vintage details, updated kitchen, and large backyard.',
   },
   {
@@ -66,7 +66,7 @@ const propertyData = [
     baths: 1,
     area: '1,200 sq.ft',
     image:
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2070&q=80',
+      '/image-11.svg',
     description: 'Charming cottage with vintage details, updated kitchen, and large backyard.',
   },
   {
@@ -79,10 +79,10 @@ const propertyData = [
     baths: 1,
     area: '1,200 sq.ft',
     image:
-      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2070&q=80',
+      '/image-11.svg',
     description: 'Charming cottage with vintage details, updated kitchen, and large backyard.',
   },
-  // Add 9 more properties
+  
   ...Array.from({ length: 9 }, (_, i) => ({
     id: i + 4,
     title: `Vintage Home #${i + 4}`,
@@ -106,12 +106,12 @@ const PropertiesSection = React.forwardRef<HTMLElement>((_, ref) => {
   };
 
   return (
-    <section ref={ref} id="properties" className="py-16 bg-amber-50">
+    <section ref={ref} id="properties" className="py-16 bg-[#17120F] text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#9d6b53] mb-2">Featured Properties</h2>
+          <h2 className="text-3xl md:text-5xl font-semibold mb-2">Our Homes</h2>
           <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className=" mt-4 max-w-2xl mx-auto">
             Explore our curated selection of vintage properties with character and charm
           </p>
         </div>

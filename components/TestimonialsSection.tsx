@@ -4,7 +4,17 @@ import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar, FaQuoteLeft } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-const testimonials = [
+type Testimonial = {
+  id: number;
+  name: string;
+  location: string;
+  review: string;
+  rating: number;
+  date: string;
+  image: string;
+};
+
+const testimonials: Testimonial[] = [
   {
     id: 1,
     name: 'Sarah J.',
@@ -53,7 +63,7 @@ const renderStars = (rating: number) => {
 
 const TestimonialsSection = React.forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} className="py-16 bg-white" id="testimonials">
+    <section ref={ref} className="py-16 bg-[#17120F] text-white" id="testimonials">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#9d6b53] mb-2">What Our Clients Say</h2>
