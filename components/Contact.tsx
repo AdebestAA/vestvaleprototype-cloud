@@ -4,10 +4,6 @@ import React from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaEnvelope,
-  FaFacebookF,
-  FaInstagram,
-  FaPinterestP,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 

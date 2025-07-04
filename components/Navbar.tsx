@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaHome, FaHeart, FaShoppingCart, FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,15 +13,13 @@ type SectionKey =
   | "products"
   | "services"
   | "testimonials"
-  | "contact"
   | "properties"
   | "homedecor"
   | "service"
   | "interior-decor";
-  
+
 interface NavbarProps {
   onNavClick?: (section: SectionKey) => void;
-  // ...other props...
 }
 
 const navLinks: { label: string; section: SectionKey; href: string }[] = [
@@ -30,7 +28,6 @@ const navLinks: { label: string; section: SectionKey; href: string }[] = [
   { label: "Interior Decor", section: "interior-decor", href: "#services" },
   { label: "Services", section: "services", href: "#services" },
   { label: "Virtual Tour", section: "testimonials", href: "#testimonials" },
-  { label: "Contact", section: "contact", href: "#contact" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
@@ -52,44 +49,28 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           />
         </div>
 
-        {/* Desktop Links */}
-        <nav className="hidden md:flex space-x-8">
-          {navLinks
-            .filter((link) => link.label !== "Contact")
-            .map((link) => (
-              <Link
-                key={link.section}
-                href={link.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavClick?.(link.section);
-                }}
-                className="text-[#141414] font-medium hover:text-[#222222] transition"
-              >
-                {link.label}
-              </Link>
-            ))}
+        {/* Desktop Nav Links */}
+        <nav className="hidden md:flex space-x-8 ml-auto">
+          {navLinks.map((link) => (
+            <Link
+              key={link.section}
+              href={link.href}
+              onClick={(e) => {
+                e.preventDefault();
+                onNavClick?.(link.section);
+              }}
+              className="text-[#141414] font-medium hover:text-[#222222] transition"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
-        {/* Icons & Mobile Toggle */}
-        <div className="flex items-center space-x-4">
-          {navLinks
-            .filter((link) => link.label === "Contact")
-            .map((link) => (
-              <button
-                key={link.section}
-                className="bg-[#D3BD9E]  font-semibold text-base md:text-xl text-[#17120f] w-26 h-10 md:w-44 md:h-14 rounded-2xl"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onNavClick?.(link.section);
-                }}
-              >
-                Contact
-              </button>
-            ))}
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden flex items-center space-x-4">
           <button
             onClick={toggleMenu}
-            className="md:hidden text-[#9d6b53] focus:outline-none"
+            className="text-[#9d6b53] focus:outline-none"
           >
             <FaBars className="text-2xl" />
           </button>
