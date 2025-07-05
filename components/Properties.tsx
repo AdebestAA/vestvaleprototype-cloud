@@ -6,8 +6,8 @@ import CountryCard from "@/components/CountryCard";
 const countries = [
   { name: "Russia", image: "/image-13.svg" },
   { name: "China", image: "/image-11.svg" },
-  { name: "Brazil", image: "/image-09.svg" },
-  { name: "India", image: "/image-10.svg" },
+  { name: "Italy", image: "/image-09.svg" },
+  { name: "Morroco", image: "/image-10.svg" },
 ];
 
 const PropertiesSection = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>((props, ref) => {
