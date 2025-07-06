@@ -11,10 +11,12 @@ interface CountryCardProps {
 
 export const CountryCard: React.FC<CountryCardProps> = ({ name, image, text }) => {
   const router = useRouter();
+  const slug = name.toLowerCase().replace(/\s+/g, '');
+    
 
   return (
     <div
-      onClick={() => router.push(`/country/${name.toLowerCase()}`)}
+      onClick={() => router.push(`/country/${slug}`)}
       className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
     >
       <div className="w-full h-64 overflow-hidden rounded-lg shadow-lg">
@@ -30,7 +32,7 @@ export const CountryCard: React.FC<CountryCardProps> = ({ name, image, text }) =
   );
 };
 
-export default CountryCard;
+
 
 const countries = [
   {
