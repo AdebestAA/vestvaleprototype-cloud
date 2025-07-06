@@ -1,16 +1,64 @@
 "use client";
 
 import React from "react";
-import CountryCard from "@/components/CountryCard";
+import { useRouter } from "next/navigation";
+
+interface CountryCardProps {
+  name: string;
+  image: string;
+  text: string;
+}
+
+export const CountryCard: React.FC<CountryCardProps> = ({ name, image, text }) => {
+  const router = useRouter();
+
+  return (
+    <div
+      onClick={() => router.push(`/country/${name.toLowerCase()}`)}
+      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
+    >
+      <div className="w-full h-64 overflow-hidden rounded-lg shadow-lg">
+        <img src={image} alt={name} className="w-full h-full object-cover" />
+      </div>
+      <div>
+        <h2 className="mt-4 text-white text-lg font-semibold uppercase tracking-wide">
+          {name}
+        </h2>
+        <p className="text-gray-200 text-sm mt-1"> {text} </p>
+      </div>
+    </div>
+  );
+};
+
+export default CountryCard;
 
 const countries = [
-  { name: "Russia", image: "/image-13.svg" },
-  { name: "China", image: "/image-11.svg" },
-  { name: "Brazil", image: "/image-09.svg" },
-  { name: "India", image: "/image-10.svg" },
+  {
+    name: "Russia",
+    text: "Rooted in grandeur and artistic legacy, the Russian-inspired interiors at Vestvale Estate exude a sense of power and poise.",
+    image: "/image-13.svg",
+  },
+  {
+    name: "China",
+    text: "Drawing from centuries of harmony, balance, and natural symbolism, our Chinese-style interiors bring serenity and flow into each home.",
+    image: "/image-11.svg",
+  },
+  {
+    name: "Brazil",
+    text: "A celebration of form, function, and finesse, the Italian-inspired interiors are marked by sleek design and architectural purity.",
+    image: "/image-09.svg",
+  },
+  {
+    name: "Morroco",
+    text: "Step into a world of vibrant geometry and cultural soul. The Moroccan interiors of Vestvale Estate feature colorful mosaic tiles, arched doorways, and ",
+    image: "/image-10.svg",
+  },
 ];
 
-const PropertiesSection = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>((props, ref) => {
+export const PropertiesSection = React.forwardRef<
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
+>((props, ref) => {
   return (
     <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter">
       <div className="text-center mb-12">
@@ -27,6 +75,7 @@ const PropertiesSection = React.forwardRef<HTMLElement, React.HTMLAttributes<HTM
             key={country.name}
             name={country.name}
             image={country.image}
+            text={country.text}
           />
         ))}
       </div>
@@ -34,4 +83,4 @@ const PropertiesSection = React.forwardRef<HTMLElement, React.HTMLAttributes<HTM
   );
 });
 
-export default PropertiesSection;
+

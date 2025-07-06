@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
-import PropertiesSection from '@/components/Properties';
+import {PropertiesSection} from '@/components/Properties';
 import OurStory from '@/components/OurStory';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from "@/components/Contact"
@@ -11,6 +11,7 @@ import FooterSection from '@/components/FooterSection';
 import NewsletterSection from '@/components/NewsletterSection';
 import HomeDecor from '@/components/HomeDecor';
 import Services from '@/components/Services';
+import { Accessories } from '@/components/AccessoriesCard';
 
 
 export default function HomePage() {
@@ -39,8 +40,8 @@ export default function HomePage() {
       <OurStory ref={sections.about} />
       <PropertiesSection ref={sections.properties} />
       <HomeDecor ref={sections.homedecor} />  
+      <Accessories />
       <Services ref={sections.service}/>
-      {/* <HomeDecorSection ref={sections.products} /> */}
       <TestimonialsSection ref={sections.testimonials} /> 
       <NewsletterSection ref={sections.services} />
       <ContactSection ref={sections.contact}   /> 
