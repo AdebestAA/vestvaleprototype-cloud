@@ -33,26 +33,10 @@ export const CountryCard: React.FC<CountryCardProps> = ({ name, image, text }) =
 export default CountryCard;
 
 const countries = [
-  {
-    name: "Russia",
-    text: "Rooted in grandeur and artistic legacy, the Russian-inspired interiors at Vestvale Estate exude a sense of power and poise.",
-    image: "/image-13.svg",
-  },
-  {
-    name: "China",
-    text: "Drawing from centuries of harmony, balance, and natural symbolism, our Chinese-style interiors bring serenity and flow into each home.",
-    image: "/image-11.svg",
-  },
-  {
-    name: "Brazil",
-    text: "A celebration of form, function, and finesse, the Italian-inspired interiors are marked by sleek design and architectural purity.",
-    image: "/image-09.svg",
-  },
-  {
-    name: "Morroco",
-    text: "Step into a world of vibrant geometry and cultural soul. The Moroccan interiors of Vestvale Estate feature colorful mosaic tiles, arched doorways, and ",
-    image: "/image-10.svg",
-  },
+  { name: "Russia", image: "/image-13.svg" },
+  { name: "China", image: "/image-11.svg" },
+  { name: "Brazil", image: "/image-09.svg" },
+  { name: "India", image: "/image-10.svg" },
 ];
 
 export const PropertiesSection = React.forwardRef<
@@ -83,4 +67,4 @@ export const PropertiesSection = React.forwardRef<
   );
 });
 
-
+export default PropertiesSection;
