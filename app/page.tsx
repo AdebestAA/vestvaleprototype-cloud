@@ -12,6 +12,7 @@ import NewsletterSection from '@/components/NewsletterSection';
 import HomeDecor from '@/components/HomeDecor';
 import Services from '@/components/Services';
 import { Accessories } from '@/components/AccessoriesCard';
+import OurPartners from '@/components/OurPartners';
 
 
 export default function HomePage() {
@@ -26,6 +27,7 @@ export default function HomePage() {
     contact: useRef<HTMLElement>(null),
     properties: useRef<HTMLElement>(null),
     service: useRef<HTMLElement>(null),
+    partners: useRef<HTMLElement>(null),
     "interior-decor": useRef<HTMLElement>(null)
   };
 
@@ -43,6 +45,7 @@ export default function HomePage() {
       <Accessories />
       <Services ref={sections.service}/>
       <TestimonialsSection ref={sections.testimonials} /> 
+      <OurPartners ref={sections.partners}/>
       <NewsletterSection ref={sections.services} />
       <ContactSection ref={sections.contact}   /> 
       <FooterSection />

@@ -51,7 +51,7 @@ const languages : languagesType<string,number>[] = [
   },
   {
     id:4,
-    language:"Englis"
+    language:"English"
   },
 ]
 
@@ -108,9 +108,9 @@ else{
 
 
           {/* list of languages */}
-        <aside ref={languageSwitcheRef} className={`fixed ${openLanguageSwticher ?"flex" :"hidden"} right-[0%] bg-[#D9D9D9] flex-col gap-y-2 w-[120px]`}>
+        <aside ref={languageSwitcheRef} className={`fixed ${openLanguageSwticher ?"flex" :"hidden"} right-[0%] bg-[#D9D9D9] flex-col  w-[120px]`}>
 {languages.map((item,_)=>{
-return <button className="text-center text-black py-1 hover:bg-white cursor-pointer transition ease-in-out duration-500" key={item.id}>
+return <button className="text-center text-black py-1 hover:bg-white cursor-pointer transition ease-in-out duration-500 py-2" key={item.id}>
 {item.language}
 </button>
 })}
