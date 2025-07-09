@@ -27,16 +27,16 @@ const propertyData: Record<
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
-      { image: "/chineese-01.svg", text: "China Interior" },
+      { image: "/chineese-01.svg", text: "Chinese Interior" },
       
     ],
   },
-  brazil: {
+  Italian: {
     title: "About our Home Accessories",
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
-      { image: "/chineese-01.svg", text: "Brazil Interior" },
+      { image: "/chineese-01.svg", text: "Chinese Interior" },
       
     ],
   },
