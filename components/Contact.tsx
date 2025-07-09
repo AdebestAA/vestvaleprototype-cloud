@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const ContactSection = React.forwardRef<HTMLElement>((_, ref) => {
   return (
-    <section ref={ref} id="contact" className="py-20 bg-[#17120F] font-inter overflow-x-hidden">
+    <section ref={ref} id="contact" className="py-20 bg-[#17120F] font-inter overflow-x-hidden px-4 lg:px-0">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Contact Info */}

@@ -23,7 +23,7 @@ export const CountryCard: React.FC<CountryCardProps> = ({ name, image, text }) =
         <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
       <div>
-        <h2 className="mt-4 text-white text-lg font-semibold uppercase tracking-wide">
+        <h2 className="mt-4 text-white text-center text-lg font-semibold uppercase tracking-wide">
           {name}
         </h2>
         <p className="text-gray-200 text-sm mt-1"> {text} </p>
@@ -62,9 +62,9 @@ export const PropertiesSection = React.forwardRef<
   React.HTMLAttributes<HTMLElement>
 >((props, ref) => {
   return (
-    <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter">
+    <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Our Homes</h2>
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Interior Decors</h2>
         <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
         <p className="mt-4 max-w-2xl mx-auto">
           Explore homes influenced by global architectural inspirations

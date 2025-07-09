@@ -18,13 +18,13 @@ export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
 
   return (
     <section
-      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
+      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105 "
        onClick={() => router.push(`/accessories/${slug}`)}
     >
-      <div>
-        <Image src={image} alt={title} width={100} height={100} className="w-full h-64 overflow-hidden rounded-lg shadow-lg"/>
+      <div className="relative overflow-hidden w-[100%] h-[200px]">
+      <Image src={image} alt={title} fill className="absolute w-full h-full rounded-md shadow-lg object-cover"/>
       </div>
-      <p>{title}</p>
+      <p className="font-medium text-start text-lg w-full my-2">{title}</p>
     </section>
   );
 };
@@ -37,9 +37,9 @@ export const Accessories: React.FC = () => {
     { image: "/wallpaper.svg", title: "Wallpaper" },
   ];
   return (
-    <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter">
+    <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
       <div>
-        <h2  className="text-center text-inter text-5xl font-medium max-w-2xl mx-auto text-white">Our Home Accessories</h2>
+        <h2  className="text-center text-inter text-4xl font-medium max-w-2xl mx-auto text-white">Home Accessories</h2>
         <p className="text-center max-w-2xl mx-auto text-white/80 mb-12">Complete your vintage home with our curated selection of classic home accessories</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">

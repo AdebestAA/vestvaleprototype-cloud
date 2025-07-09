@@ -16,7 +16,7 @@ const sectionVariants = {
 
 const FooterSection = () => {
   return (
-    <footer className="bg-[#D3BD9E] text-black py-12 sm:py-16 font-inter overflow-x-hidden">
+    <footer className="bg-[#D3BD9E] text-black py-12 sm:py-16 font-inter overflow-x-hidden px-4 lg:px-0">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Logo Centered Above */}
         <div className="flex justify-center mb-8">

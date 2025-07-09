@@ -36,7 +36,7 @@ export default function HomePage() {
   };
 
   return (
-    <main className='bg-[#17120F]'>
+    <main className='bg-[#17120F] '>
       <Navbar  onNavClick={scrollToSection} />
       <Hero ref={sections.hero} />
       <OurStory ref={sections.about} />

@@ -8,7 +8,7 @@ const serviceItem = [
     image: "/house-icon.svg",
     heading: "Luxury Real Estate Development",
     paragraph:
-      "We design and build premium duplexes and estate homes with custom finishes, modern amenities, and timeless exteriors.",
+      `We design , build and provide premium  Estate Villa's, Apartments,Skyscrapers,Lands for sale,Hospital buildings,Schools`,
   },
   {
     id: 2,
@@ -74,7 +74,7 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
       ref={ref}
-      className="relative font-inter bg-cover bg-center w-full min-h-screen py-20 overflow-x-hidden container"
+      className="relative font-inter bg-cover bg-center w-full min-h-screen py-20 overflow-x-hidden container px-4 lg:px-0"
       style={{
         backgroundImage: "url('/image-11.svg')",
       }}

@@ -8,7 +8,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
       ref={ref}
-      className="w-full font-inter text-white overflow-hidden relative flex flex-col items-center justify-start"
+      className="w-full font-inter text-white overflow-hidden relative flex flex-col items-center justify-start "
       style={{
         minHeight: "120vh",
         background: "linear-gradient(to bottom, #0a0a0a 40%, #ffffff 90%)",

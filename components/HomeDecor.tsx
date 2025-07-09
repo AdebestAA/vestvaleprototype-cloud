@@ -10,7 +10,7 @@ const HomeDecor = React.forwardRef<
     <section
       ref={ref}
       id="homedecor"
-      className="container md:w-10/12 mx-auto font-inter overflow-x-hidden"
+      className="container md:w-10/12 mx-auto font-inter overflow-x-hidden px-4 lg:px-0"
     >
       
     </section>

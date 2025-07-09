@@ -14,11 +14,11 @@ const partnersImages: {id:number,src:string,name:string}[] = [
     },
 ]
 const OurPartners = forwardRef<HTMLElement,{}>((_,ref) => {
-    // const {partners} = props
+   
   return (
-    <section className='pb-8' ref={ref}>
+    <section className='pb-8 px-4 lg:px-0' ref={ref}>
 
-<h1 className='text-center md:text-[56px]  text-[40px]'>Our Partners</h1>
+<h1 className='text-center md:text-[56px]  text-[35px]'>Our Partners</h1>
 <div className='flex justify-center md:gap-x-8 gap-x-4 px-4 md:px-0' >
 {partnersImages.map((item,_)=>{
 
