@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { button } from "framer-motion/client";
 
 type SectionKey =
   | "navbar"
@@ -30,27 +31,94 @@ const navLinks: { label: string; section: SectionKey; href: string }[] = [
   { label: "Virtual Tour", section: "testimonials", href: "#testimonials" },
 ];
 
+interface languagesType<S,N>{
+  id:N,
+  language:S
+}
+
+const languages : languagesType<string,number>[] = [
+  {
+    id:1,
+    language:"Chinese"
+  },
+  {
+    id:2,
+    language:"Russian"
+  },
+  {
+    id:3,
+    language:"Italian"
+  },
+  {
+    id:4,
+    language:"Englis"
+  },
+]
+
 const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [openLanguageSwticher,setOpenLanguageSwitcher] = useState<boolean>(false)
+  const languageSwitcherBtn = useRef<HTMLButtonElement | null >(null)
+  const languageSwitcherBtnMobile = useRef<HTMLButtonElement | null >(null)
+  const languageSwitcheRef = useRef<HTMLElement | null>(null)
 
+
+
+  useEffect(()=>{
+
+const btnElement = languageSwitcherBtn.current as HTMLButtonElement
+const btnElementMobile = languageSwitcherBtnMobile.current as HTMLButtonElement
+const languageSwitcherElement = languageSwitcheRef.current as HTMLElement
+
+
+console.log(btnElement.getBoundingClientRect());
+if (window.innerWidth >= 768) {
+  const getDistanceOfBtnFromTheTop =  btnElement.getBoundingClientRect().bottom
+  languageSwitcherElement.style.top = `${getDistanceOfBtnFromTheTop}px`
+}  
+else{
+  
+  const getDistanceOfBtnFromTheTop =  btnElementMobile.getBoundingClientRect().bottom
+  languageSwitcherElement.style.top = `${getDistanceOfBtnFromTheTop}px`
+} 
+
+
+  },[openLanguageSwticher])
+
+  
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
+  const toggleLanguageSwitcher = ():void => setOpenLanguageSwitcher((prev) => !prev);
+
   return (
-    <header className="w-full bg-white sticky top-0 z-50 shadow-md font-inter overflow-x-hidden">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <header  className="w-full bg-white sticky top-0 z-50 shadow-md font-inter overflow-x-hidden">
+
+
+      <div className="container mx-auto px-2 py-3 flex justify-between items-center ">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <Image
             src="/vestvale logo 1.png"
             alt="Vestvale Logo"
             width={118}
             height={52}
             className="md:w-30 w-24"
-          />
+            />
         </div>
 
+
+          {/* list of languages */}
+        <aside ref={languageSwitcheRef} className={`fixed ${openLanguageSwticher ?"flex" :"hidden"} right-[0%] bg-[#D9D9D9] flex-col gap-y-2 w-[120px]`}>
+{languages.map((item,_)=>{
+return <button className="text-center text-black py-1 hover:bg-white cursor-pointer transition ease-in-out duration-500" key={item.id}>
+{item.language}
+</button>
+})}
+</aside>
+
+
         {/* Desktop Nav Links */}
-        <nav className="hidden md:flex space-x-8 ml-auto">
+        <nav className="hidden md:flex space-x-8 ">
           {navLinks.map((link) => (
             <Link
               key={link.section}
@@ -66,8 +134,33 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           ))}
         </nav>
 
+
+{/* language switcher btn */}
+<div className="hidden md:block " >
+           <button 
+           onClick={toggleLanguageSwitcher}
+           ref={languageSwitcherBtn}
+           className="cursor-ponter"> <Image src={"/language-switcher.svg"}
+           width={50}
+           height={30}
+           className="cursor-pointer" alt="language switcher "  /></button>
+        </div>
+        
+
+
+        
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center space-x-4">
+          {/* language */}
+        <button 
+           onClick={toggleLanguageSwitcher}
+           ref={languageSwitcherBtnMobile}
+           className="cursor-ponter"> <Image src={"/language-switcher.svg"}
+           width={30}
+           height={30}
+           className="cursor-pointer" alt="language switcher "  /></button>
+{/* bar */}
+
           <button
             onClick={toggleMenu}
             className="text-[#9d6b53] focus:outline-none"
@@ -107,6 +200,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavClick }) => {
           </motion.div>
         )}
       </AnimatePresence>
+
     </header>
   );
 };
