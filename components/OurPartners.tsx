@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const partnersImages: {id:number,src:string,name:string}[] = [
     {
         id:1,
-        name:"lampnet",
+        name:"lamppaper",
         src:"/idea-space.png"
     },
     {
