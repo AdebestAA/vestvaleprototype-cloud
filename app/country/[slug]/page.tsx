@@ -1,5 +1,7 @@
+
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+
 
 type propertyImage = string | { image: string; text: string };
 
@@ -58,6 +60,7 @@ interface PropertyPageProps {
 }
 
 const PropertyPage: React.FC<PropertyPageProps> = ({ params }) => {
+  // const router = useRouter()
   const content = propertyData[params.slug];
 
   if (!content) {
@@ -72,7 +75,7 @@ const PropertyPage: React.FC<PropertyPageProps> = ({ params }) => {
             <h1 className="text-4xl md:text-5xl font-bold ">{content.title}</h1>
             <p className="font-normal text-white/80 ">{content.description}</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center  ">
             {content.images.map((img, i) => {
               const src = typeof img === "string" ? img : img.image;
 
@@ -81,13 +84,15 @@ const PropertyPage: React.FC<PropertyPageProps> = ({ params }) => {
                   ? `${content.title} ${i + 1}`
                   : img.text || `${content.title} ${i + 1}`;
               return (
-                <div key={i}>
+                <div key={i} 
+                // onClick={()=> router.push("/russian-interior-demo")}
+                >
                   <Image
                     src={src}
                     alt={alt}
                     width={400}
                     height={500}
-                    className=" border -full border-white  object-cover rounded-lg shadow-md transition-transform hover:scale-105 ease-in-out duration-300"
+                    className=" border-white  object-cover rounded-lg shadow-md transition-transform hover:scale-102 ease-in-out duration-300"
                   />
                   <p className="font-bold text-xl capitalize md:text-xl text-white mt-4">
                     {typeof img === "string" ? "" : img.text}
