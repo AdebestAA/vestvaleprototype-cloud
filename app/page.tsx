@@ -47,7 +47,7 @@ export default function HomePage() {
       <TestimonialsSection ref={sections.testimonials} /> 
       <OurPartners ref={sections.partners}/>
       <NewsletterSection ref={sections.services} />
-      <ContactSection ref={sections.contact}   /> 
+      {/* <ContactSection ref={sections.contact}   />  */}
       <FooterSection />
       {/* Add FooterSection if you have one, or remove this line if not */}
       

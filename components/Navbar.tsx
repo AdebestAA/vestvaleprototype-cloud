@@ -98,11 +98,11 @@ else{
         {/* Logo */}
         <div className="flex items-center ">
           <Image
-            src="/vestvale logo 1.png"
+            src="/logo-change.png"
             alt="Vestvale Logo"
-            width={118}
-            height={52}
-            className="md:w-30 w-24"
+            width={20}
+            height={30}
+            className="md:w-14 w-10"
             />
         </div>
 
