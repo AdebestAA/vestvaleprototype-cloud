@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
 
@@ -13,16 +14,20 @@ const accessoriesData: Record<
 > = {
   door: {
     title: "About our Home Accessories",
-    description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design...",
+    description: "Luxury is defined by culture, craftsmanship, and timeless design...",
     images: [
       { image: "/door-01.svg", text: "door" },
       // ... other images
     ],
   },
-  // ... other accessories
+  // ... other categories
 };
 
+export async function generateStaticParams() {
+  return Object.keys(accessoriesData).map((slug) => ({ slug }));
+}
+
+// ✅ This is the correct way to type the dynamic route page
 export default function AccessoriesDetailPage({
   params,
 }: {
@@ -42,8 +47,4 @@ export default function AccessoriesDetailPage({
       <AccessoryDynamicComponent content={content} />
     </>
   );
-}
-
-export function generateStaticParams() {
-  return Object.keys(accessoriesData).map((slug) => ({ slug }));
 }
