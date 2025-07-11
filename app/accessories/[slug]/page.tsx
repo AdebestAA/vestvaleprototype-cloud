@@ -86,7 +86,7 @@ interface PageProps {
   params: { slug: string };
 }
 
-const AccessoriesDetailPage = ({ params }: PageProps) => {
+const AccessoriesDetailPage = ({ params }: { params: { slug: string } }) => {
   const content = accessoriesData[params.slug];
 
   if (!content) {
@@ -97,8 +97,8 @@ const AccessoriesDetailPage = ({ params }: PageProps) => {
 
   return (
     <>
-    <Navbar/>
-    <AccessoryDynamicComponent content={content}/>
+      <Navbar />
+      <AccessoryDynamicComponent content={content} />
     </>
   );
 };
@@ -108,3 +108,4 @@ export default AccessoriesDetailPage;
 export function generateStaticParams() {
   return Object.keys(accessoriesData).map((slug) => ({ slug }));
 }
+
