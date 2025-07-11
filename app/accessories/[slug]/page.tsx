@@ -1,6 +1,9 @@
 import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+// Forcefully override any weird type expectations
+export const dynamic = "force-static";
+
 
 type AccessoryImage = string | { image: string; text: string };
 
@@ -83,11 +86,13 @@ const accessoriesData: Record<
 };
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>,
+  
 }
 
-const AccessoriesDetailPage = ({ params }: PageProps) => {
-  const content = accessoriesData[params.slug];
+const AccessoriesDetailPage =async({ params }: PageProps) => {
+  const {slug} = await params
+  const content = accessoriesData[slug];
 
   if (!content) {
     return (
@@ -108,3 +113,4 @@ export default AccessoriesDetailPage;
 export function generateStaticParams() {
   return Object.keys(accessoriesData).map((slug) => ({ slug }));
 }
+

@@ -56,13 +56,15 @@ const propertyData: Record<
   },
 };
 
-interface PropertyPageProps {
-  params: { slug: string };
+interface PageProps {
+  params: Promise<{ slug: string }>,
+  
 }
 
-const PropertyPage: React.FC<PropertyPageProps> = ({ params }) => {
+const PropertyPage =async ({ params }:PageProps) => {
   // const router = useRouter()
-  const content = propertyData[params.slug];
+  const {slug} = await params
+  const content =  propertyData[slug];
 
   if (!content) {
     return <div>Property not found</div>;
@@ -80,3 +82,4 @@ export default PropertyPage;
 export function generateStaticParams() {
   return Object.keys(propertyData).map((slug) => ({ slug }));
 }
+
