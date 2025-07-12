@@ -83,6 +83,18 @@ const accessoriesData: Record<
       { image: "/wallpaper-09.svg", text: "wallpaper" },
     ],
   },
+  tiles: {
+    title: "About our Home Accessories ",
+    description:
+      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    images: [
+      { image: "/tile-01.svg", text: "title" },
+      { image: "/tile-02.svg", text: "title" },
+      { image: "/tile-03.svg", text: "title" },
+      { image: "/tile-04.svg", text: "title" },
+   
+    ],
+  },
 };
 
 interface PageProps {

@@ -15,7 +15,7 @@ const NewsletterSection = React.forwardRef<HTMLElement>((_, ref) => {
         className="container mx-auto px-4 text-center"
       >
         
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Join Subscribe to our newsletter to get updates on our latest offers</h2>
+        <h2 className="text-3xl md:text-4xl md:font-bold font-medium mb-4">Join Subscribe to our newsletter to get updates on our latest offers</h2>
         
 
         <form className="max-w-md mx-auto flex gap-4">
@@ -26,7 +26,7 @@ const NewsletterSection = React.forwardRef<HTMLElement>((_, ref) => {
           />
           <button
             type="submit"
-            className="bg-[#D3BD9E] hover:bg-[#D3BD9E]/80 px-6 py-3 text-black  rounded-2xl font-medium transition"
+            className="bg-[#D3BD9E] hover:bg-[#D3BD9E]/80 px-6 py-3 text-black  rounded-lg font-medium transition"
           >
             Subscribe
           </button>

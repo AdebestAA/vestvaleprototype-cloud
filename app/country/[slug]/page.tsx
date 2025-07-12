@@ -22,6 +22,8 @@ const propertyData: Record<
       { image: "/russia-01.svg", text: "Russia Apartment" },
       { image: "/russia-02.svg", text: "Russia Apartment" },
       { image: "/russia-03.svg", text: "Russia Apartment" },
+      { image: "/russia-04.svg", text: "Russia Apartment" },
+      { image: "/russia-05.svg", text: "Russia Apartment" },
       
     ],
   },
@@ -31,15 +33,18 @@ const propertyData: Record<
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
       { image: "/chineese-01.svg", text: "Chinese Interior" },
+      { image: "/chineese-02.svg", text: "Chinese Interior" },
       
     ],
   },
-  Italian: {
+  italy: {
     title: "About our Home Accessories",
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
-      { image: "/chineese-01.svg", text: "Chinese Interior" },
+      { image: "/italian-01.svg", text: "Italian Interior" },
+      { image: "/italian-02.svg", text: "Italian Interior" },
+      { image: "/italian-03.svg", text: "Italian Interior" },
       
     ],
   },
