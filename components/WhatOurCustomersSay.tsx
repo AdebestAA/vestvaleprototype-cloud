@@ -26,28 +26,33 @@ const details = [
 const WhatOurCustomersSay = () => {
 
   return (
-    <div>
-<h1 className='text-center'>What Our Customers Say</h1>
+    <div className='px-4 flex flex-col md:flex-row md:justify-between'> 
+    <div className='py-2'>
+<h1 className='text-center font-medium text-xl md:text-2xl lg:text-4xl'>What Our Customers Say</h1>
+    </div>
 
-<section>
+<section className=''>
     {details.map((item,index)=>{
 
-        return <div key={index}>
-            <aside>
+        return <div key={index} className={`${index == 0 ? "md:w-[70%] lg:w-[60%]  md:translate-x-[20%] lg:translate-x-[30%] bg-[#D3BD9E]" : index == 1 ? "md:w-[70%] lg:w-[60%] md:translate-x-[4%] lg:translate-x-[8%] bg-[#372B25]" : "md:w-[70%] lg:w-[60%] md:translate-x-[40%] lg:translate-x-[60%] bg-[#898989]"}  flex justify-end my-4`}>
+            <aside className='flex items-center w-[96%] bg-white text-black justify-between  gap-x-2 px-2 py-4'>
                 {/* Image */}
-                <div className='relative w-[100px] h-[100px]'>
+                <div className='w-[30%] h-full py-4 flex justify-center items-center'>
+
+                <div className='relative w-[70px] h-[70px] overflow-hidden'>
                     <Image
-                    className='absolute object-cover'
+                    className='absolute object-cover rounded-full  w-full h-full'
                     fill 
                     src={item.imgProfile} 
                     alt={item.name}
-                     />
+                    />
 
                 </div>
+                    </div>
                 {/* Info */}
-                <div>
-                    <h1>{item.name}</h1>
-                    <p>{item.speech}</p>
+                <div  className='w-[70%] text-sm px-1'>
+                    <h1 className='font-semibold'>{item.name}</h1>
+                    <p className='my-2'>{item.speech}</p>
                 </div>
             </aside>
         </div>

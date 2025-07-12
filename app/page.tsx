@@ -47,8 +47,8 @@ export default function HomePage() {
       <HomeDecor ref={sections.homedecor} />  
       <Accessories ref={sections.homeAccessories} />
       <Services ref={sections.services}/>
-      {/* <WhatOurCustomersSay/> */}
-      <TestimonialsSection ref={sections.testimonials} /> 
+      <WhatOurCustomersSay/>
+      {/* <TestimonialsSection ref={sections.testimonials} />  */}
       <OurPartners ref={sections.partners}/>
       <NewsletterSection ref={sections.service} />
       {/* <ContactSection ref={sections.contact}   />  */}
