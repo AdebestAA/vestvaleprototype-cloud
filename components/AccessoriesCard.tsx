@@ -41,6 +41,7 @@ export const  Accessories = React.forwardRef<
     { image: "/door.svg", title: "Door" },
     { image: "/lights.svg", title: "Lights" },
     { image: "/wallpaper.svg", title: "Wallpaper" },
+    { image: "/tiles.svg", title: "Tiles" },
   ];
   return (
     <section
@@ -59,10 +60,12 @@ export const  Accessories = React.forwardRef<
         <h2  className="text-center text-inter text-4xl font-medium max-w-2xl mx-auto text-white">Home Accessories</h2>
         <p className="text-center max-w-2xl mx-auto text-white/80 mb-12">Complete your vintage home with our curated selection of classic home accessories</p>
       </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      {/* grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center items-center */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
         {theAccessories.map((accessory, index) => (
           <AccessoriesCard
             key={index}
+            
             image={accessory.image}
             title={accessory.title}
           />

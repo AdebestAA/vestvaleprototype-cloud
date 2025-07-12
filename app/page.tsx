@@ -13,6 +13,7 @@ import HomeDecor from '@/components/HomeDecor';
 import Services from '@/components/Services';
 import { Accessories } from '@/components/AccessoriesCard';
 import OurPartners from '@/components/OurPartners';
+import WhatOurCustomersSay from '@/components/WhatOurCustomersSay';
 
 
 export default function HomePage() {
@@ -46,6 +47,7 @@ export default function HomePage() {
       <HomeDecor ref={sections.homedecor} />  
       <Accessories ref={sections.homeAccessories} />
       <Services ref={sections.services}/>
+      {/* <WhatOurCustomersSay/> */}
       <TestimonialsSection ref={sections.testimonials} /> 
       <OurPartners ref={sections.partners}/>
       <NewsletterSection ref={sections.service} />

@@ -87,7 +87,7 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
       <div className="relative z-20 max-w-7xl mx-auto px-4">
 
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Our Services</h2>
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2" style={{color:"white"}}>Our Services</h2>
         <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
         {/* <p className="mt-4 max-w-2xl mx-auto">
         Complete your vintage home with our curated selection of classic home accessories

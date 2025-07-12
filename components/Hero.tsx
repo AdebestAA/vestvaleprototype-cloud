@@ -73,23 +73,7 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
           }}
         >
           <motion.button
-            className="px-6 py-3 bg-[#D3BD9E] text-[#17120F] rounded-md font-medium text-sm md:text-base tracking-wide"
-            variants={{
-              hidden: { opacity: 0, y: 40 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.4 }}
-            onClick={() => {
-              const el = document.getElementById("properties");
-              if (el) el.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Explore Our Homes
-          </motion.button>
-
-          <motion.button
-            className="px-6 py-3 border border-[#9d6b53] text-white rounded-md font-medium text-sm md:text-base tracking-wide"
+            className="cursor-pointer px-6 py-3 bg-[#D3BD9E] text-[#17120F] rounded-md font-medium text-sm md:text-base tracking-wide"
             variants={{
               hidden: { opacity: 0, y: 40 },
               visible: { opacity: 1, y: 0 },
@@ -98,6 +82,22 @@ const Hero = React.forwardRef<HTMLElement>((_, ref) => {
             transition={{ duration: 0.4 }}
             onClick={() => {
               const el = document.getElementById("homedecor");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+           Home Accessories
+          </motion.button>
+
+          <motion.button
+            className="cursor-pointer px-6  py-3 border border-[#9d6b53] text-white rounded-md font-medium text-sm md:text-base tracking-wide"
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.4 }}
+            onClick={() => {
+              const el = document.getElementById("interiorDecor");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
           >
