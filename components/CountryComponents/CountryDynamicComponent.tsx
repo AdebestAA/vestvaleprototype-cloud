@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import React, { useEffect } from 'react'
 
-const CountryDynamicComponent = ({content}:{content:any}) => {
+const CountryDynamicComponent = ({content,slug}:{content:any,slug:string}) => {
 const router = useRouter()
 //     const params = useParams()
 //     const pathName = usePathname()
@@ -13,6 +13,9 @@ const router = useRouter()
 // console.log(params);
 // console.log(pathName);
 //     },[])
+useEffect(()=>{
+  console.log("content",content);
+},[])
 
   return (
     <section className="w-full h-full bg-[#17120F] font-inter px-4 lg:px-0">
@@ -31,7 +34,7 @@ const router = useRouter()
               : img.text || `${content.title} ${i + 1}`;
           return (
             <div key={i} 
-            onClick={()=> router.push(`/russian-interior-demo`)}
+            onClick={()=> router.push(`russia/1`)}
             >
               <Image
                 src={src}

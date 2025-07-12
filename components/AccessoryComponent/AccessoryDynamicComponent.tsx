@@ -22,7 +22,7 @@ const AccessoryDynamicComponent = ({content}:any) => {
               : img.text || `${content.title} ${i + 1}`;
           return (
             <div
-            onClick={()=> router.push("/vintage-light-demo")}
+            onClick={()=> router.push("door/1")}
             key={i} className="">
        <div className="relative w-full h-[200px] overflow-hidden border border-white rounded-md">
        <Image

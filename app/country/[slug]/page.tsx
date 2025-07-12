@@ -77,7 +77,7 @@ const PropertyPage =async ({ params }:PageProps) => {
   return (
     <>
     <Navbar/>
-     <CountryDynamicComponent content={content}/>
+     <CountryDynamicComponent content={content} slug={slug}/>
     </>
   );
 };
@@ -85,6 +85,8 @@ const PropertyPage =async ({ params }:PageProps) => {
 export default PropertyPage;
 
 export function generateStaticParams() {
+  console.log("these are keys",Object.keys(propertyData).map((slug) => ({ slug })));
+  
   return Object.keys(propertyData).map((slug) => ({ slug }));
 }
 

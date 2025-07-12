@@ -2,7 +2,7 @@ import { type Metadata } from "next";
 import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-// Forcefully override any weird type expectations
+
 export const dynamic = "force-static";
 
 
