@@ -74,6 +74,7 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
       ref={ref}
+      id="services"
       className="relative font-inter bg-cover bg-center  min-w-full  py-20 container px-4 lg:px-0"
       style={{
         backgroundImage: "url('/image-11.svg')",
@@ -84,9 +85,17 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
       <div className="absolute inset-0 bg-black/80 z-10"></div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Our Services</h2>
+        <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
+        {/* <p className="mt-4 max-w-2xl mx-auto">
+        Complete your vintage home with our curated selection of classic home accessories
+        </p> */}
+      </div>
+        {/* <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
           Our Services
-        </h2>
+        </h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {serviceItem.map((item, i) => (
             <motion.div

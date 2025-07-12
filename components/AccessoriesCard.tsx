@@ -18,6 +18,7 @@ export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
 
   return (
     <section
+    
       className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105 "
        onClick={() => router.push(`/accessories/${slug}`)}
     >
@@ -29,7 +30,12 @@ export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
   );
 };
 
-export const Accessories: React.FC = () => {
+
+
+export const  Accessories = React.forwardRef<
+  HTMLElement,
+  React.HTMLAttributes<HTMLElement>
+>((props, ref) => {
   const theAccessories = [
     { image: "/image-05.svg", title: "Door Handle" },
     { image: "/door.svg", title: "Door" },
@@ -37,11 +43,22 @@ export const Accessories: React.FC = () => {
     { image: "/wallpaper.svg", title: "Wallpaper" },
   ];
   return (
-    <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
-      <div>
+    <section
+    ref={ref}
+    id="homeAccessories"
+    className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
+
+<div className="text-center mb-12">
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Home Accessories</h2>
+        <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
+        <p className="mt-4 max-w-2xl mx-auto">
+        Complete your vintage home with our curated selection of classic home accessories
+        </p>
+      </div>
+      {/* <div>
         <h2  className="text-center text-inter text-4xl font-medium max-w-2xl mx-auto text-white">Home Accessories</h2>
         <p className="text-center max-w-2xl mx-auto text-white/80 mb-12">Complete your vintage home with our curated selection of classic home accessories</p>
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {theAccessories.map((accessory, index) => (
           <AccessoriesCard
@@ -53,4 +70,10 @@ export const Accessories: React.FC = () => {
       </div>
     </section>
   );
-};
+});
+
+
+
+// export const Accessories: React.FC = () => {
+  
+// };

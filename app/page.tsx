@@ -21,6 +21,8 @@ export default function HomePage() {
     hero: useRef<HTMLElement>(null),
     about: useRef<HTMLElement>(null),
     products: useRef<HTMLElement>(null),
+    homeAccessories:useRef<HTMLElement>(null),
+    interiorDecor:useRef<HTMLElement>(null),
     homedecor: useRef<HTMLElement>(null),
     services: useRef<HTMLElement>(null),
     testimonials: useRef<HTMLElement>(null),
@@ -40,13 +42,13 @@ export default function HomePage() {
       <Navbar  onNavClick={scrollToSection} />
       <Hero ref={sections.hero} />
       <OurStory ref={sections.about} />
-      <PropertiesSection ref={sections.properties} />
+      <PropertiesSection ref={sections.interiorDecor} />
       <HomeDecor ref={sections.homedecor} />  
-      <Accessories />
-      <Services ref={sections.service}/>
+      <Accessories ref={sections.homeAccessories} />
+      <Services ref={sections.services}/>
       <TestimonialsSection ref={sections.testimonials} /> 
       <OurPartners ref={sections.partners}/>
-      <NewsletterSection ref={sections.services} />
+      <NewsletterSection ref={sections.service} />
       {/* <ContactSection ref={sections.contact}   />  */}
       <FooterSection />
       {/* Add FooterSection if you have one, or remove this line if not */}

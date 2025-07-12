@@ -17,7 +17,9 @@ type SectionKey =
   | "properties"
   | "homedecor"
   | "service"
-  | "interior-decor";
+  | "interior-decor"
+  | "homeAccessories"
+  | "interiorDecor";
 
 interface NavbarProps {
   onNavClick?: (section: SectionKey) => void;
@@ -25,8 +27,8 @@ interface NavbarProps {
 
 const navLinks: { label: string; section: SectionKey; href: string }[] = [
   { label: "About Us", section: "about", href: "#about" },
-  { label: "Our Properties", section: "products", href: "#products" },
-  { label: "Interior Decor", section: "interior-decor", href: "#services" },
+  { label: "Home Accessories", section: "homeAccessories", href: "#homeAccessories" },
+  { label: "Interior Decor", section: "interiorDecor", href: "#interiorDecor" },
   { label: "Services", section: "services", href: "#services" },
   { label: "Virtual Tour", section: "testimonials", href: "#testimonials" },
 ];
@@ -188,9 +190,12 @@ return <button className="text-center text-black py-1 hover:bg-white cursor-poin
                   href={link.href}
                   className="block py-2 hover:bg-amber-900 px-2 rounded"
                   onClick={(e) => {
-                    e.preventDefault();
+                    // e.preventDefault();
                     onNavClick?.(link.section);
-                    setIsOpen(false);
+                    setTimeout(()=>{
+
+                      setIsOpen(false);
+                    },100)
                   }}
                 >
                   {link.label}

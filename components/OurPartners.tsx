@@ -18,7 +18,12 @@ const OurPartners = forwardRef<HTMLElement,{}>((_,ref) => {
   return (
     <section className='pb-8 px-4 lg:px-0' ref={ref}>
 
-<h1 className='text-center md:text-[56px]  text-[35px] text-white'>Our Partners</h1>
+<div className="text-center mb-12">
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Our Partners</h2>
+        <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
+       
+      </div>
+{/* <h1 className='text-center md:text-[56px]  text-[35px] text-white'>Our Partners</h1> */}
 <div className='flex justify-center md:gap-x-8 gap-x-4 px-4 md:px-0' >
 {partnersImages.map((item,_)=>{
 

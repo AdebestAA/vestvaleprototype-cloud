@@ -62,7 +62,10 @@ export const PropertiesSection = React.forwardRef<
   React.HTMLAttributes<HTMLElement>
 >((props, ref) => {
   return (
-    <section className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
+    <section
+    ref={ref}
+    id="interiorDecor"
+    className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-semibold mb-2">Interior Decors</h2>
         <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
