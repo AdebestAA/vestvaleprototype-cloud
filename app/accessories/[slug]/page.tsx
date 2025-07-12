@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import AccessoryDynamicComponent from "@/components/AccessoryComponent/AccessoryDynamicComponent";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
@@ -17,8 +18,7 @@ const accessoriesData: Record<
 > = {
   door: {
     title: "About our Home Accessories",
-    description:
-      "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
+    description: "Luxury is defined by culture, craftsmanship, and timeless design...",
     images: [
       { image: "/door-01.svg", text: "door" },
       { image: "/door-02.svg", text: "door" },
@@ -114,8 +114,8 @@ const AccessoriesDetailPage =async({ params }: PageProps) => {
 
   return (
     <>
-    <Navbar/>
-    <AccessoryDynamicComponent content={content}/>
+      <Navbar />
+      <AccessoryDynamicComponent content={content} />
     </>
   );
 };
