@@ -25,7 +25,7 @@ Exceptional Craftsmanship: Each door is meticulously crafted with attention to d
 const page = () => {
   return (
     <div
-    className='bg-foreground min-h-screen  text-black pb-8'
+    className='bg-[#F5F1E6] min-h-screen  text-black pb-8'
     >
 {/* Image Preview */}
 <div className='relative w-full h-[400px] '>

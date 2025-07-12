@@ -25,7 +25,8 @@ Rich Colors: Deep reds, emerald greens, gold, royal blues.`,
 const page = () => {
   return (
     <div
-    className='bg-foreground min-h-screen  text-black pb-8'
+    // style={{background:""}}
+    className='bg-[#F5F1E6] min-h-screen  text-black pb-8'
     >
 {/* Image Preview */}
 <div className='relative w-full h-[400px] '>

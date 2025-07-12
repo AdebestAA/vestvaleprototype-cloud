@@ -1,21 +1,22 @@
 import Image from 'next/image'
 import React from 'react'
+
 const details = [
     {
         id:1,
-        imgProfile:"/man.png",
+        imgProfile:"/man-one.svg",
         name:"Abu Mohammed",
         speech:"Got good and quality lights for my house from vestvale estate"
     },
     {
         id:2,
-        imgProfile:"/man.png",
+        imgProfile:"/lady.svg",
         name:"Lara George",
         speech:"Had my itailian fittings from Vestvale, I recommend them."
     },
     {
         id:3,
-        imgProfile:"/man.png",
+        imgProfile:"/man-two.svg",
         name:"Kenneth Daniel",
         speech:"Getting all my international door and wallpaper fittings for my house in Nigeria from Vestvale. They are a worthy partner. "
     },
@@ -26,7 +27,7 @@ const details = [
 const WhatOurCustomersSay = () => {
 
   return (
-    <div className='px-4 flex flex-col md:flex-row md:justify-between'> 
+    <div className='font-inter px-4 flex flex-col md:flex-row md:justify-between'> 
     <div className='py-2'>
 <h1 className='text-center font-medium text-xl md:text-2xl lg:text-4xl'>What Our Customers Say</h1>
     </div>
