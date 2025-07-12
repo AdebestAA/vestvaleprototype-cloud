@@ -46,7 +46,7 @@ const countries = [
     image: "/image-11.svg",
   },
   {
-    name: "Brazil",
+    name: "Italy",
     text: "A celebration of form, function, and finesse, the Italian-inspired interiors are marked by sleek design and architectural purity.",
     image: "/image-09.svg",
   },

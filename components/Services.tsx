@@ -74,11 +74,12 @@ const Services = React.forwardRef<HTMLElement>((_, ref) => {
   return (
     <section
       ref={ref}
-      className="relative font-inter bg-cover bg-center w-full min-h-screen py-20 overflow-x-hidden container px-4 lg:px-0"
+      className="relative font-inter bg-cover bg-center  min-w-full  py-20 container px-4 lg:px-0"
       style={{
         backgroundImage: "url('/image-11.svg')",
       }}
     >
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/80 z-10"></div>
 

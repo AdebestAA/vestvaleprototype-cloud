@@ -97,13 +97,13 @@ else{
       <div className="container mx-auto px-2 py-3 flex justify-between items-center ">
         {/* Logo */}
         <div className="flex items-center ">
-          <Image
-            src="/logo-change.png"
+          <Link href={"/"}><Image
+            src="/vest-logo.png"
             alt="Vestvale Logo"
             width={20}
             height={30}
             className="md:w-14 w-10"
-            />
+            /></Link>
         </div>
 
 
