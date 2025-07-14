@@ -2,9 +2,11 @@
 import Image from 'next/image';
 import { useParams, usePathname, useRouter } from 'next/navigation';
 import React, { useEffect } from 'react'
+import { motion } from "framer-motion";
 
 const CountryDynamicComponent = ({content,slug}:{content:any,slug:string}) => {
 const router = useRouter()
+const id = slug == "russia" ? 1 : slug == "italy" ? 2 : slug == "china" ? 3 : 4
 //     const params = useParams()
 //     const pathName = usePathname()
 
@@ -33,9 +35,20 @@ useEffect(()=>{
               ? `${content.title} ${i + 1}`
               : img.text || `${content.title} ${i + 1}`;
           return (
-            <div key={i} 
-            onClick={()=> router.push(`russia/1`)}
+            <motion.div
+            initial={{ opacity: 0, x: Number(`${i % 2 == 0 ? 40 : -40}`)}}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+              onClick={()=> router.push(`${slug}/${id}`)}
+            key={i}
             >
+         
+
+
+
+            {/* <div key={i} 
+            onClick={()=> router.push(`russia/1`)}
+            > */}
               <Image
                 src={src}
                 alt={alt}
@@ -46,7 +59,8 @@ useEffect(()=>{
               <p className="font-bold text-xl capitalize md:text-xl text-white mt-4">
                 {typeof img === "string" ? "" : img.text}
               </p>
-            </div>
+            {/* </div> */}
+            </motion.div>
           );
         })}
       </div>

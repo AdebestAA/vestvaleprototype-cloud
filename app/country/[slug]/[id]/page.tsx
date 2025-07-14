@@ -3,6 +3,13 @@
 import Image from 'next/image'
 import React from 'react'
 
+
+const data = [
+  { slug: 'russia', id: '1' },
+  { slug: 'italy', id: '2' },
+  { slug: 'china', id: '3' },
+  { slug: 'morroco', id: '4' },
+];
 const images = [
   {
     id:1,
@@ -33,6 +40,8 @@ export default async function CountryInfo({
 
     const {id,slug} = await params
     console.log(await params);
+
+    const findCountry = data.find(item => item.id == id)
     
   return (
      <div
@@ -49,7 +58,7 @@ export default async function CountryInfo({
  
  {/* name and request price */}
  <section className='flex justify-between items-center px-2 md:px-6 my-4'> 
-   <h1 className='text-xl font-semibold'>Russian Interior</h1>
+   <h1 className='text-xl font-semibold capitalize'>{slug} Interior</h1>
    <div className='bg-foreground rounded-xl p-4 box-shadow-class'>
    <button className='bg-request-btn rounded-lg px-4 py-1'>Request Price</button>
    </div>
@@ -104,10 +113,5 @@ export default async function CountryInfo({
 
 
 export async function generateStaticParams() {
-    return [
-      { slug: 'russia', id: '1' },
-      { slug: 'italy', id: '2' },
-      { slug: 'china', id: '3' },
-      { slug: 'morocco', id: '4' },
-    ];
+    return data
   }
