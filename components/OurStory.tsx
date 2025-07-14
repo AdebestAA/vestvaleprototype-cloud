@@ -22,8 +22,7 @@ const OurStory = React.forwardRef<HTMLElement>((_, ref) => {
             <h3 className="text-3xl md:text-6xl font-medium mb-4">About us</h3>
             <div>
               <p className="mb-4 text-base font-normal text-[#fffdfd]">
-                Vestvale Estate is a visionary real estate development based in
-                Nigeria, Nigeria. Designed for those who seek more than a home,
+                Vestvale Estate is a visionary real estate development based in Nigeria. Designed for those who seek more than a home,
                 Vestvale offers a lifestyle that combines architectural elegance
                 with nature, international influences, and luxury
               </p>

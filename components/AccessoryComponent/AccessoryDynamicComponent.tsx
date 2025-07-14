@@ -26,7 +26,7 @@ const AccessoryDynamicComponent = ({content}:any) => {
     initial={{ opacity: 0, x: Number(`${i % 2 == 0 ? 40 : -40}`)}}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8 }}
-    onClick={()=> router.push(`russia/1`)}
+    onClick={()=> router.push(`door/1`)}
     key={i}
     >
     {/* // <div
