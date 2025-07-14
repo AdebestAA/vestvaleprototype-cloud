@@ -10,7 +10,7 @@ const AccessoryDynamicComponent = ({content}:any) => {
     <section className="w-full h-full bg-[#17120F] font-inter px-4 lg:px-0">
     <div className="w-full  md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter">
       <div className="space-y-6 mb-12 ">
-        <h1 className="text-4xl md:text-3xl font-bold ">{content.title}</h1>
+        <h1 className="text-4xl md:text-3xl font-bold  ">{content.title}</h1>
         <p className="font-normal text-white/80 ">{content.description}</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
