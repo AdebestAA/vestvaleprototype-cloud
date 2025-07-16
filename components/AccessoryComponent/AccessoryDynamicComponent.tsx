@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import React from 'react'
 import { motion } from "framer-motion";
 
-const AccessoryDynamicComponent = ({content}:any) => {
+const AccessoryDynamicComponent = ({content,slug}:any) => {
     const router = useRouter()
   return (
     <section className="w-full h-full bg-[#17120F] font-inter px-4 lg:px-0">
@@ -26,7 +26,7 @@ const AccessoryDynamicComponent = ({content}:any) => {
     initial={{ opacity: 0, x: Number(`${i % 2 == 0 ? 40 : -40}`)}}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8 }}
-    onClick={()=> router.push(`door/1`)}
+    onClick={()=> router.push(`${slug}/${img.id}`)}
     key={i}
     >
     {/* // <div

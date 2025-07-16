@@ -1,10 +1,12 @@
 import Image from "next/image"
-
+import { accessoriesData } from "../page"
+import { allImagesForDoors } from "@/app/utils/doorPopUpProps"
 const images = [
     {
       id:1,
-      src:"/vintage-light.png",
-      name:"chair one"
+      slug:"door",
+      name:"door-one",
+      src:"/door-01.svg",
     },
   //   {
   //     id:2,
@@ -12,6 +14,10 @@ const images = [
   //     name:"chair two"
   //   },
   ]
+
+
+
+  
 
   const characteristics: string[] = [
     `
@@ -23,8 +29,28 @@ const images = [
    `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`
    ]
 
+   const allObjects = [
+    {name:"doors",images:accessoriesData.doors.images}
+
+   ]
+
 export default async function AccessoriesInfo({params}:{params:Promise<{slug:string,id:string | number}>}){
 const {slug,id} = await params
+
+let content = null
+if (slug == "doors") {
+  content = allImagesForDoors.find(item => item.name == id)
+}
+
+console.log(allObjects);
+console.log(accessoriesData.doors.images.map((item ,index)=>{
+
+  return {slug:"door",id:item.text}
+}));
+
+
+// console.log(Object.keys(accessoriesData));
+
      return (
         <div
         className='bg-[#F5F1E6] min-h-screen  text-black pb-8'
@@ -34,12 +60,12 @@ const {slug,id} = await params
       <Image 
       fill
       className='absolute md:object-contain object-cover'
-      src={"/vintage-light.png"} alt='russian iterior' />
+      src={content? content.src : "/vintage-light.png"} alt='russian iterior' />
     </div>
     
     {/* name and request price */}
     <section className='flex justify-between items-center px-2 md:px-6 my-4'> 
-      <h1 className='text-xl font-semibold'>Vintage Light</h1>
+      <h1 className='text-xl font-semibold'>{content?.name}</h1>
       <div className='bg-foreground rounded-xl p-4 box-shadow-class'>
       <button className='bg-request-btn rounded-lg px-4 py-1'>Request Price</button>
       </div>
@@ -49,15 +75,14 @@ const {slug,id} = await params
     <article className='bg-foreground px-2 md:px-6'>
       <h1 className='font-semibold'>Property Description</h1>
       <p className='leading-8'>
-      Elevate Your Space with Our Premium [Interior/Exterior] Door Collection!
-      Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need.
+     {content?.prescription}
       </p>
     
     {/* Key characteristics you'll see */}
     <aside className='py-4 '>
     <h1 className='font-semibold my-2'>Why Choose Our Doors</h1>
     <ul className='mx-6 bg-foreground'>
-      {characteristics.map((item,index)=>{
+      {content?.whyChoose.map((item,index)=>{
         return <li className='list-disc' key={index}>{item}</li>
       })}
     </ul>
@@ -69,12 +94,12 @@ const {slug,id} = await params
     <article className='bg-foreground px-2 md:px-6'>
     <h1 className='text-lg font-medium'>Gallery</h1>
     
-    <aside className='  '>
-    {images.map((item,index)=>(
+    <aside className=' flex md:justify-between md:flex-row flex-col items-center '>
+    {content?.itemsToPrev.map((item,index)=>(
       <div className='relative  w-[300px] h-[400px] my-4 md:my-0'>
         <Image 
         className='absolute md:object-contain object-cover'
-        src={item.src} 
+        src={item.prevSrc} 
         fill
         alt={item.name}
          />
@@ -89,8 +114,28 @@ const {slug,id} = await params
 
 export function generateStaticParams(){
     return [
-      //{slug: "doors", id: "1"},
-      {slug: "russia", id: "1"},
+      ...accessoriesData.doors.images.map((item)=>{
+
+        return {slug:"doors",id:item.id}
+      }),
+      ...accessoriesData["door-handles"].images.map((item)=>{
+
+        return {slug:"door-handles",id:item.id}
+      }),
+      ...accessoriesData.wallpapers.images.map((item)=>{
+
+        return {slug:"wallpapers",id:item.id}
+      }),
+      ...accessoriesData.lights.images.map((item)=>{
+
+        return {slug:"lights",id:item.id}
+      }),
+      ...accessoriesData.tiles.images.map((item)=>{
+
+        return {slug:"tiles",id:item.id}
+      }),
+      // {slug: "doors", id: "1"},
+      // {slug: "doors", id: "door-one"},
       // add more as needed
     ];
 }

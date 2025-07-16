@@ -10,6 +10,7 @@ interface AccessoriesCardProps {
   image: string;
   title: string;
   index: number;
+  tag:string
 }
 
 const cardVariants = {
@@ -41,9 +42,10 @@ export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
   image,
   title,
   index,
+  tag
 }) => {
   const router = useRouter();
-  const slug = title.toLowerCase().replace(/\s+/g, '');
+  const slug = tag.toLowerCase().replace(/\s+/g, '');
 
   return (
     <motion.section
@@ -83,11 +85,11 @@ export const  Accessories = React.forwardRef<
   }, [inView, controls]);
 
   const theAccessories = [
-    { image: "/image-05.svg", title: "Door Handles" },
-    { image: "/door.svg", title: "Doors" },
-    { image: "/lights.svg", title: "Lights" },
-    { image: "/wallpaper.svg", title: "Wallpapers" },
-    { image: "/tiles.svg", title: "Tiles" },
+    { image: "/image-05.svg", title: "Door Handles" ,tag:"door-handles"},
+    { image: "/door.svg", title: "Doors" ,tag:"doors"},
+    { image: "/lights.svg", title: "Lights" ,tag:"lights"},
+    { image: "/wallpaper.svg", title: "Wallpapers",tag:"wallpapers" },
+    { image: "/tiles.svg", title: "Tiles",tag:"tiles" },
   ];
 
   return (
@@ -123,6 +125,7 @@ export const  Accessories = React.forwardRef<
             image={accessory.image}
             title={accessory.title}
             index={index}
+            tag={accessory.tag}
           />
         ))}
       </div>
