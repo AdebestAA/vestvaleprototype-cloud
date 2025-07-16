@@ -11,19 +11,6 @@ interface CountryCardProps {
   index: number;
 }
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 100 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.5,
-      duration: 0.6,
-      ease: easeInOut,
-    },
-  }),
-};
-
 const CountryCard: React.FC<CountryCardProps> = ({
   name,
   image,
@@ -32,13 +19,42 @@ const CountryCard: React.FC<CountryCardProps> = ({
 }) => {
   const router = useRouter();
   const slug = name.toLowerCase().replace(/\s+/g, "");
+  const ref = useRef(null);
+  const inView = useInView(ref, { amount: 0.3, once: false }); // animate every time in view
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [inView, controls]);
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: index % 2 === 0 ? -80 : 80, // alternate direction
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        delay: index * 0.1,
+        duration: 0.8,
+        ease: easeInOut,
+      },
+    },
+  };
 
   return (
     <motion.div
-      custom={index}
-      variants={cardVariants}
+      ref={ref}
+      variants={variants}
       initial="hidden"
-      animate="visible"
+      animate={controls}
       className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
       onClick={() => router.push(`/country/${slug}`)}
     >
