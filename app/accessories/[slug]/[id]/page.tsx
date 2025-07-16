@@ -88,5 +88,9 @@ const {slug,id} = await params
 }
 
 export function generateStaticParams(){
-    return [{slug:"door",id:"1"}]
+    return [
+      //{slug: "doors", id: "1"},
+      {slug: "russia", id: "1"},
+      // add more as needed
+    ];
 }

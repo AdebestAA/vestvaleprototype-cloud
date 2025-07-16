@@ -3,30 +3,67 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { easeInOut, motion, useAnimation, useInView } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 interface AccessoriesCardProps {
   image: string;
   title: string;
+  index: number;
 }
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.5,
+      duration: 0.7,
+      ease: easeInOut,
+    },
+  }),
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: easeInOut,
+    },
+  },
+};
 
 export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
   image,
   title,
+  index,
 }) => {
   const router = useRouter();
   const slug = title.toLowerCase().replace(/\s+/g, '');
 
   return (
-    <section
-    
-      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105 "
-       onClick={() => router.push(`/accessories/${slug}`)}
+    <motion.section
+      custom={index}
+      variants={cardVariants}
+      initial="hidden"
+      animate="visible"
+      className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
+      onClick={() => router.push(`/accessories/${slug}`)}
     >
       <div className="relative overflow-hidden w-[100%] h-[200px]">
-      <Image src={image} alt={title} fill className="absolute w-full h-full rounded-md shadow-lg object-cover"/>
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="absolute w-full h-full rounded-md shadow-lg object-cover"
+        />
       </div>
       <p className="font-medium text-start text-lg w-full my-2">{title}</p>
-    </section>
+    </motion.section>
   );
 };
 
@@ -36,19 +73,37 @@ export const  Accessories = React.forwardRef<
   HTMLElement,
   React.HTMLAttributes<HTMLElement>
 >((props, ref) => {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const inView = useInView(sectionRef, { amount: 0.3, once: false });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) controls.start("visible");
+    else controls.start("hidden");
+  }, [inView, controls]);
+
   const theAccessories = [
-    { image: "/image-05.svg", title: "Door Handle" },
-    { image: "/door.svg", title: "Door" },
+    { image: "/image-05.svg", title: "Door Handles" },
+    { image: "/door.svg", title: "Doors" },
     { image: "/lights.svg", title: "Lights" },
-    { image: "/wallpaper.svg", title: "Wallpaper" },
+    { image: "/wallpaper.svg", title: "Wallpapers" },
     { image: "/tiles.svg", title: "Tiles" },
   ];
-  return (
-    <section
-    ref={ref}
-    id="homeAccessories"
-    className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0">
 
+  return (
+    <motion.section
+      ref={(node) => {
+        sectionRef.current = node;
+        if (typeof ref === "function") ref(node);
+        else if (ref) ref.current = node;
+      }}
+    id="homeAccessories"
+      className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0"
+      initial="hidden"
+      animate={controls}
+      variants={sectionVariants}
+      transition={{ duration: 0.8, ease: easeInOut }}
+    >
 <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-semibold mb-2">Home Accessories</h2>
         <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
@@ -65,18 +120,17 @@ export const  Accessories = React.forwardRef<
         {theAccessories.map((accessory, index) => (
           <AccessoriesCard
             key={index}
-            
             image={accessory.image}
             title={accessory.title}
+            index={index}
           />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 });
 
 
 
 // export const Accessories: React.FC = () => {
-  
 // };
