@@ -109,7 +109,7 @@ Easy Installation (or Contractor-Friendly): Designed for straightforward install
     },
     {
       
-        id:1,
+        id:1, 
         slug:"door",
         name:"door-ten",
         src:"/door-10.svg",
