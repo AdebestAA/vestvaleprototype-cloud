@@ -1,82 +1,82 @@
-export const allImagesForDoors = [
+export const allImagesForWallpapers = [
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-one",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863733/door-01_l4mkb9.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-one",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.39_bcdc07df_tqwrct.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863737/door-02_lqrk81.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863739/door-03_nq89hb.svg" }]
+        itemsToPrev: [{ name: "wallpaper-two", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.38_ecc7b942_gxjaar.jpg" }, { name: "wallpaper-three", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772166/WhatsApp_Image_2025-05-31_at_09.49.38_41df8110_hna74p.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-two",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863737/door-02_lqrk81.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-two",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.38_ecc7b942_gxjaar.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863739/door-03_nq89hb.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863742/door-04_b9z7s9.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772166/WhatsApp_Image_2025-05-31_at_09.49.38_41df8110_hna74p.jpg" }, { name: "wallpaper-four", prevSrc: "hhttps://res.cloudinary.com/dnoycjq2q/image/upload/v1752772152/W18_dbqc92.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-three",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863739/door-03_nq89hb.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-three",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772166/WhatsApp_Image_2025-05-31_at_09.49.38_41df8110_hna74p.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863742/door-04_b9z7s9.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863715/door-05_tassgr.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772152/W18_dbqc92.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772145/W17_t8ii1k.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-four",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863742/door-04_b9z7s9.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-four",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772152/W18_dbqc92.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863715/door-05_tassgr.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863716/door-06_pvxpt2.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772145/W17_t8ii1k.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W14_qzclki.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-five",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863715/door-05_tassgr.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-five",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772145/W17_t8ii1k.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863716/door-06_pvxpt2.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863718/door-07_wzqcea.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W14_qzclki.jpg" }, { name: "wallpaper-seven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W16_twkum5.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-six",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863716/door-06_pvxpt2.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-six",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W14_qzclki.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863718/door-07_wzqcea.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863720/door-08_eevlf1.svg" }]
+        itemsToPrev: [{ name: "wallpaper-seven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W16_twkum5.jpg" }, { name: "wallpaper-eight", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772143/W15_sfgifu.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-seven",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863718/door-07_wzqcea.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-seven",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772144/W16_twkum5.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
@@ -85,62 +85,158 @@ Easy Installation (or Contractor-Friendly): Designed for straightforward install
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-eight",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863720/door-08_eevlf1.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-eight",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772143/W15_sfgifu.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863723/door-09_bcyh0r.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863724/door-10_agl9pz.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772139/W13_yylyga.jpg" }, { name: "wallpaper-ten", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/W12_ihktmt.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-nine",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863723/door-09_bcyh0r.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-nine",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772139/W13_yylyga.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863724/door-10_agl9pz.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg" }]
+        itemsToPrev: [{ name: "wallpaper-ten", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/W12_ihktmt.jpg" }, { name: "wallpaper-eleven", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/w10_ozornt.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-ten",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863724/door-10_agl9pz.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-ten",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/W12_ihktmt.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863729/door-12_ehernk.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/w10_ozornt.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772117/w11_k3xp7i.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-11",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-eleven",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772119/w10_ozornt.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
-        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863729/door-12_ehernk.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863724/door-10_agl9pz.svg" }]
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772117/w11_k3xp7i.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772115/w8_sfk9id.jpg" }]
 
     },
     {
 
-        id: 1,
-        slug: "door",
-        name: "door-twelve",
-        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863729/door-12_ehernk.svg",
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-twelve",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772117/w11_k3xp7i.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772115/w8_sfk9id.jpg" }, { name: "wallpaper-fourteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772114/w9_jlmzdr.jpg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-thirteen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772115/w8_sfk9id.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772114/w9_jlmzdr.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748657099248_eqxzy6.jpg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-fourteen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772114/w9_jlmzdr.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748657099248_eqxzy6.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772007/mmexport1748573163380_flsxkr.jpg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-fifteen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748657099248_eqxzy6.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772007/mmexport1748573163380_flsxkr.jpg" }, { name: "wallpaper-seventeen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771998/mmexport1748572390478_szfmhk.jpg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-sixteen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772007/mmexport1748573163380_flsxkr.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "wallpaper-seventeen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771998/mmexport1748572390478_szfmhk.jpg" }, { name: "wallpaper-eighteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771872/1748572496523_msdodm.png" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-seventeen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771998/mmexport1748572390478_szfmhk.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "wallpaper-eighteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771872/1748572496523_msdodm.png" }, { name: "wallpaper-nineteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772090/w5_rcpu8z.jpg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-eighteen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771872/1748572496523_msdodm.png",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772090/w5_rcpu8z.jpg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-nineteen",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772090/w5_rcpu8z.jpg",
         prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
 Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
         itemsToPrev: [{ name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863733/door-01_l4mkb9.svg" }, { name: "door", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752863727/door-11_kdh3cu.svg" }]
+
+    },
+    {
+
+        id: 5,
+        slug: "wallpaper",
+        name: "wallpaper-twenty",
+        src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772113/w7_k0cvwj.jpg",
+        prescription: `Elevate Your Space with Our Premium Door Collection! Discover the perfect blend of style, security, and craftsmanship with our versatile range of doors. Whether you're seeking to enhance your home's curb appeal, redefine an interior space, or simply replace an old door, our collection offers exceptional quality and design to suit every need`,
+        whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
+Easy Installation (or Contractor-Friendly): Designed for straightforward installation, our doors come ready to be fitted into your existing or new doorway. [If applicable, mention: Pre-hung options available for even simpler setup, or standard sizing to fit common door frames.]`, `Ready for Your Personal Touch: Most of our doors come [primed and ready to paint/stain, or in a natural finish], allowing you to customize them to perfectly match your home's color scheme and personal style.`],
+        itemsToPrev: [{ name: "wallpaper-nineteen", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772090/w5_rcpu8z.jpg" }, { name: "wallpaper-one", prevSrc: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772167/WhatsApp_Image_2025-05-31_at_09.49.39_bcdc07df_tqwrct.jpg" }]
 
     },
 ]

@@ -1,6 +1,10 @@
 import Image from "next/image"
 import { accessoriesData } from "../page"
 import { allImagesForDoors } from "@/app/utils/doorPopUpProps"
+import {  allImagesForLights } from "@/app/utils/lightPopUpProps"
+import { allImagesForWallpapers } from "@/app/utils/wallpaperPopUpProps"
+import { allImagesForDoorHandles } from "@/app/utils/doorhandlePopUpProps"
+import { allImagesForTiles } from "@/app/utils/tilePopUpProps"
 const images = [
     {
       id:1,
@@ -40,6 +44,18 @@ const {slug,id} = await params
 let content = null
 if (slug == "doors") {
   content = allImagesForDoors.find(item => item.name == id)
+}
+else if(slug == "lights"){
+  content = allImagesForLights.find(item => item.name == id)
+}
+else if(slug == "wallpapers"){
+  content = allImagesForWallpapers.find(item => item.name == id)
+}
+else if(slug == "door-handles"){
+  content = allImagesForDoorHandles.find(item => item.name == id)
+}
+else if(slug == "tiles"){
+  content = allImagesForTiles.find(item => item.name == id)
 }
 
 console.log(allObjects);
