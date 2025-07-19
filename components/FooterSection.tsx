@@ -70,7 +70,7 @@ const FooterSection = () => {
             <ul className="mt-4 space-y-4">
               {["Door handle", "Wallpapaer", "lights","doors","tiles"].map((item) => (
                 <li key={item}>
-                  <a href="#properties" className="hover:text-white transition-colors">
+                  <a href="#properties" className="hover:text-white transition-colors capitalize">
                     {item}
                   </a>
                 </li>

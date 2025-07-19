@@ -88,7 +88,7 @@ const PropertyPage =async ({ params }:PageProps) => {
 export default PropertyPage;
 
 export function generateStaticParams() {
-  console.log("these are keys",Object.keys(countryPropertyData).map((slug) => ({ slug })));
+  // console.log("these are keys",Object.keys(countryPropertyData).map((slug) => ({ slug })));
   
   return Object.keys(countryPropertyData).map((slug) => ({ slug }));
 }
