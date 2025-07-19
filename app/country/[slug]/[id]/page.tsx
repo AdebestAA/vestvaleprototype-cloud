@@ -62,6 +62,8 @@ if (slug == "china") {
     content = allImagesForRussianDecor.find(item => item.name == id)
 }
     
+console.log(content);
+
 
 if (!content) {
   return <div>content not available</div>
@@ -142,7 +144,7 @@ export async function generateStaticParams() {
         return {slug:"russia",id:item.id}
       }),
       ...countryPropertyData["morocco"].images.map((item,index)=>{
-        return {slug:"morocoo",id:item.id}
+        return {slug:"morocco",id:item.id}
       }),
       ...countryPropertyData["italy"].images.map((item,index)=>{
         return {slug:"italy",id:item.id}

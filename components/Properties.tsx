@@ -20,7 +20,7 @@ const CountryCard: React.FC<CountryCardProps> = ({
   const router = useRouter();
   const slug = name.toLowerCase().replace(/\s+/g, "");
   const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.3, once: false }); // animate every time in view
+  const inView = useInView(ref, { amount: 0.3, once: false }); 
   const controls = useAnimation();
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const CountryCard: React.FC<CountryCardProps> = ({
   const variants = {
     hidden: {
       opacity: 0,
-      x: index % 2 === 0 ? -80 : 80, // alternate direction
+      x: index % 2 === 0 ? -80 : 80, 
       scale: 0.95,
     },
     visible: {
@@ -88,7 +88,7 @@ const countries = [
     image: "/image-09.svg",
   },
   {
-    name: "Morroco",
+    name: "Morocco",
     text: "Step into a world of vibrant geometry and cultural soul. The Moroccan interiors of Vestvale Estate feature colorful mosaic tiles, arched doorways, and ",
     image: "/image-10.svg",
   },

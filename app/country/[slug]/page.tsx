@@ -19,12 +19,12 @@ export const countryPropertyData: Record<
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772058/v2_srqlek.png", text: "Russia Apartment",id:"russia-decor-one" },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772016/R1_fzcmkq.png", text: "Russia Apartment" ,id:"russia-decor-two"},
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772016/R1_fzcmkq.png", text: "Russia Apartment" ,id:"russia-decor-three"},
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772013/R3_i23dxb.png", text: "Russia Apartment" ,id:"russia-decor-four"},
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772013/R4_kf10un.png", text: "Russia Apartment" ,id:"russia-decor-five"},
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772010/R2_b5jreh.png", text: "Russia Apartment" ,id:"russia-decor-six"},
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772058/v2_srqlek.png", text: "Russia Apartment",id:"russian-decor-one" },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772016/R1_fzcmkq.png", text: "Russia Apartment" ,id:"russian-decor-two"},
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772016/R1_fzcmkq.png", text: "Russia Apartment" ,id:"russian-decor-three"},
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772013/R3_i23dxb.png", text: "Russia Apartment" ,id:"russian-decor-four"},
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772013/R4_kf10un.png", text: "Russia Apartment" ,id:"russian-decor-five"},
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772010/R2_b5jreh.png", text: "Russia Apartment" ,id:"russian-decor-six"},
       
     ],
   },
@@ -88,7 +88,7 @@ const PropertyPage =async ({ params }:PageProps) => {
 export default PropertyPage;
 
 export function generateStaticParams() {
-  // console.log("these are keys",Object.keys(propertyData).map((slug) => ({ slug })));
+  console.log("these are keys",Object.keys(countryPropertyData).map((slug) => ({ slug })));
   
   return Object.keys(countryPropertyData).map((slug) => ({ slug }));
 }

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const CountryDynamicComponent = ({content,slug}:{content:any,slug:string}) => {
 const router = useRouter()
-const id = slug == "russia" ? 1 : slug == "italy" ? 2 : slug == "china" ? 3 : 4
+// const id = slug == "russia" ? 1 : slug == "italy" ? 2 : slug == "china" ? 3 : 4
 //     const params = useParams()
 //     const pathName = usePathname()
 
@@ -54,7 +54,7 @@ useEffect(()=>{
                 alt={alt}
                 width={400}
                 height={500}
-                className=" border-white  object-cover rounded-lg shadow-md transition-transform hover:scale-102 ease-in-out duration-300"
+                className=" border-white  object-cover rounded-lg shadow-md transition-transform hover:scale-102 ease-in-out duration-300 min-h-[350px]"
               />
               <p className="font-bold text-xl capitalize md:text-xl text-white mt-4">
                 {typeof img === "string" ? "" : img.text}
