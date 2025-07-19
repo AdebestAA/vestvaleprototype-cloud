@@ -1,9 +1,9 @@
-export const allImagesForTiles = [
+export const allImagesForMoroccanDecor = [
     {
 
         id: 4,
-        slug: "moroccian-decor",
-        name: "moroccian-decor-one",
+        slug: "moroccan-decor",
+        name: "moroccan-decor-one",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771983/M1_k7ulov.png",
         prescription: `Designed to elevate your space with a touch of Moroccan elegance, our Moroccan Decor doors blend intricate patterns and vibrant colors to create a stunning focal point in any room. Perfect for those who appreciate the beauty of cultural artistry, these doors are not just functional but also a statement piece that enhances your home's aesthetic. Whether you're looking to add a splash of color or a unique design element, our Moroccan Decor doors are the perfect choice for transforming your interiors.`,
         whyChoose: ["Exceptional Design: Each decor is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
@@ -14,8 +14,8 @@ Easy Installation (or Contractor-Friendly): Designed for straightforward install
     {
 
         id: 4,
-        slug: "morroccian-decor",
-        name: "morroccian-decor-two",
+        slug: "moroccan-decor",
+        name: "moroccan-decor-two",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/M3_spaizw.png",
         prescription: `Designed to elevate your space with a touch of Moroccan elegance, our Moroccan Decor doors blend intricate patterns and vibrant colors to create a stunning focal point in any room. Perfect for those who appreciate the beauty of cultural artistry, these doors are not just functional but also a statement piece that enhances your home's aesthetic. Whether you're looking to add a splash of color or a unique design element, our Moroccan Decor doors are the perfect choice for transforming your interiors.`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
@@ -26,8 +26,8 @@ Easy Installation (or Contractor-Friendly): Designed for straightforward install
     {
 
         id: 4,
-        slug: "morroccian-decor",
-        name: "morroccian-decor-three",
+        slug: "moroccan-decor",
+        name: "moroccan-decor-three",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/M4_dhqn9p.png",
         prescription: `Designed to elevate your space with a touch of Moroccan elegance, our Moroccan Decor doors blend intricate patterns and vibrant colors to create a stunning focal point in any room. Perfect for those who appreciate the beauty of cultural artistry, these doors are not just functional but also a statement piece that enhances your home's aesthetic. Whether you're looking to add a splash of color or a unique design element, our Moroccan Decor doors are the perfect choice for transforming your interiors.`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `
@@ -38,8 +38,8 @@ Easy Installation (or Contractor-Friendly): Designed for straightforward install
     {
 
         id: 4,
-        slug: "morroccian-decor",
-        name: "morroccian-decor-four",
+        slug: "moroccan-decor",
+        name: "moroccan-decor-four",
         src: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771977/M2_bpc6ps.png",
         prescription: `Designed to elevate your space with a touch of Moroccan elegance, our Moroccan Decor doors blend intricate patterns and vibrant colors to create a stunning focal point in any room. Perfect for those who appreciate the beauty of cultural artistry, these doors are not just functional but also a statement piece that enhances your home's aesthetic. Whether you're looking to add a splash of color or a unique design element, our Moroccan Decor doors are the perfect choice for transforming your interiors.`,
         whyChoose: ["Exceptional Craftsmanship: Each door is meticulously crafted with attention to detail, ensuring superior quality and a flawless finish. Experience the difference of a door built to last", `Durable & Long-Lasting: Constructed from high-grade materials [mention examples like: solid wood, engineered wood, fiberglass, steel, etc., or keep generic if product range is too wide], our doors are designed to withstand daily wear and tear, offering years of reliable performance and beauty.`, `Versatile Design Options: From sleek modern lines to classic panel designs, and rustic [barn/farmhouse] styles, our diverse collection offers a door to complement any architectural style and interior decor. Find the perfect fit for your aesthetic vision`, `Enhanced Functionality & Security: Beyond aesthetics, our doors provide robust performance. [If applicable, mention: Featuring solid core construction for better sound insulation and energy efficiency, or pre-bored for standard hardware for easy lock installation, etc.] Many designs offer enhanced security features for your peace of mind.`, `

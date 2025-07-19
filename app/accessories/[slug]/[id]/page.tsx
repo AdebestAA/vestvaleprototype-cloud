@@ -58,14 +58,18 @@ else if(slug == "tiles"){
   content = allImagesForTiles.find(item => item.name == id)
 }
 
-console.log(allObjects);
-console.log(accessoriesData.doors.images.map((item ,index)=>{
+// console.log(allObjects);
+// console.log(accessoriesData.doors.images.map((item ,index)=>{
 
-  return {slug:"door",id:item.text}
-}));
+//   return {slug:"door",id:item.text}
+// }));
 
 
 // console.log(Object.keys(accessoriesData));
+
+if (!content) {
+  return <div>no content available</div>
+}
 
      return (
         <div

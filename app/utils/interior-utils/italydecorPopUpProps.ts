@@ -1,4 +1,4 @@
-export const allImagesForTiles = [
+export const allImagesForItalianDecor = [
     {
 
         id: 3,
