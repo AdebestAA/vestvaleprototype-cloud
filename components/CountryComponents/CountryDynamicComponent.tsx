@@ -39,7 +39,7 @@ useEffect(()=>{
             initial={{ opacity: 0, x: Number(`${i % 2 == 0 ? 40 : -40}`)}}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-              onClick={()=> router.push(`${slug}/${id}`)}
+              onClick={()=> router.push(`${slug}/${img.id}`)}
             key={i}
             >
          
