@@ -31,9 +31,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} `}
-      >
-       
+  className={`overflow-x-hidden ${geistSans.variable} ${geistMono.variable}`}
+>
         {children}
       </body>
     </html>

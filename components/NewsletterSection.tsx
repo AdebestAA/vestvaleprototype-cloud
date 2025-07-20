@@ -32,7 +32,7 @@ const NewsletterSection = React.forwardRef<HTMLElement>((_, ref) => {
           </button>
         </form>
 
-        <p className="text-sm text-white mt-4 opacity-80">We respect your privacy. Unsubscribe at any time.</p>
+        <p className="text-sm text-white mt-4 opacity-80">We respect your privacy. <a href='#' className="hover:text-gray-400 transition-colors"> Unsubscribe</a> at any time.</p>
       </motion.div>
     </section>
   );

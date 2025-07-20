@@ -1,82 +1,95 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { easeInOut, motion, useAnimation, useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { motion, useInView, useAnimation, easeInOut } from "framer-motion";
 
 interface AccessoriesCardProps {
   image: string;
   title: string;
+  text?: string;
   index: number;
-  tag:string
+  tag: string;
 }
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 100 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.5,
-      duration: 0.7,
-      ease: easeInOut,
-    },
-  }),
-};
-
-const sectionVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: easeInOut,
-    },
-  },
-};
-
-export const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
+const AccessoriesCard: React.FC<AccessoriesCardProps> = ({
   image,
   title,
+  text,
   index,
-  tag
+  tag,
 }) => {
   const router = useRouter();
-  const slug = tag.toLowerCase().replace(/\s+/g, '');
+  const ref = useRef(null);
+  const inView = useInView(ref, { amount: 0.2, once: false });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [inView, controls]);
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: index % 2 === 0 ? -80 : 80,
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: {
+        delay: index * 0.1,
+        duration: 0.4,
+        ease: easeInOut,
+      },
+    },
+  };
 
   return (
-    <motion.section
-      custom={index}
-      variants={cardVariants}
+    <motion.div
+      ref={ref}
+      variants={variants}
       initial="hidden"
-      animate="visible"
+      animate={controls}
       className="cursor-pointer flex flex-col items-center transition-transform hover:scale-105"
-      onClick={() => router.push(`/accessories/${slug}`)}
+      onClick={() => router.push(`/accessories/${tag.toLowerCase()}`)}
     >
-      <div className="relative overflow-hidden w-[100%] h-[200px]">
+      <div className="w-full h-64 overflow-hidden rounded-lg shadow-lg">
         <Image
           src={image}
           alt={title}
-          fill
-          className="absolute w-full h-full rounded-md shadow-lg object-cover"
+          width={400}
+          height={300}
+          className="w-full h-full object-cover rounded-lg"
         />
       </div>
-      <p className="font-medium text-start text-lg w-full my-2">{title}</p>
-    </motion.section>
+      <div className="w-full text-center mt-4">
+        <h2 className="text-white text-lg font-semibold uppercase tracking-wide">
+          {title}
+        </h2>
+        {text && <p className="text-gray-200 text-sm mt-1">{text}</p>}
+      </div>
+    </motion.div>
   );
 };
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 60 },
+  visible: { opacity: 1, y: 0 },
+};
 
-
-export const  Accessories = React.forwardRef<
+export const Accessories = React.forwardRef<
   HTMLElement,
   React.HTMLAttributes<HTMLElement>
 >((props, ref) => {
   const sectionRef = useRef<HTMLElement | null>(null);
-  const inView = useInView(sectionRef, { amount: 0.3, once: false });
+  const inView = useInView(sectionRef, { amount: 0.2, once: false });
   const controls = useAnimation();
 
   useEffect(() => {
@@ -85,11 +98,36 @@ export const  Accessories = React.forwardRef<
   }, [inView, controls]);
 
   const theAccessories = [
-    { image: "/image-05.svg", title: "Door Handles" ,tag:"door-handles"},
-    { image: "/door.svg", title: "Doors" ,tag:"doors"},
-    { image: "/lights.svg", title: "Lights" ,tag:"lights"},
-    { image: "/wallpaper.svg", title: "Wallpapers",tag:"wallpapers" },
-    { image: "/tiles.svg", title: "Tiles",tag:"tiles" },
+    {
+      image: "/image-05.svg",
+      title: "🚪 Door Handles",
+      text: "Every touch counts. Vestvale’s door handles are crafted to blend luxury and function, adding a refined finish to your home’s entryways.",
+      tag: "door-handles",
+    },
+    {
+      image: "/door.svg",
+      title: "🚻 Doors",
+      text: "Step into sophistication — our custom-made doors are not just entrances, but statements of craftsmanship, security, and elegance.",
+      tag: "doors",
+    },
+    {
+      image: "/lights.svg",
+      title: "💡 Lighting",
+      text: "Vestvale Estate lighting designs blend warmth and grandeur, illuminating your home with timeless elegance and modern brilliance.",
+      tag: "lights",
+    },
+    {
+      image: "/wallpaper.svg",
+      title: "🖼️ Wallpapers",
+      text: "Every wall tells a story at Vestvale Estate – with handpicked wallpapers that combine Italian, Moroccan, and contemporary patterns to evoke character and class.",
+      tag: "wallpapers",
+    },
+    {
+      image: "/tiles.svg",
+      title: "🧱 Tiles",
+      text: "From Italian marble to premium ceramic finishes, Vestvale tiles bring luxury underfoot, combining beauty, strength, and effortless maintenance.",
+      tag: "tiles",
+    },
   ];
 
   return (
@@ -99,41 +137,36 @@ export const  Accessories = React.forwardRef<
         if (typeof ref === "function") ref(node);
         else if (ref) ref.current = node;
       }}
-    id="homeAccessories"
+      id="homeAccessories"
       className="w-full md:w-10/12 mx-auto py-16 bg-[#17120F] text-white font-inter px-4 lg:px-0"
       initial="hidden"
       animate={controls}
       variants={sectionVariants}
-      transition={{ duration: 0.8, ease: easeInOut }}
+      transition={{ duration: 0.4, ease: easeInOut }}
     >
-<div className="text-center mb-12">
-        <h2 className="text-3xl md:text-5xl font-semibold mb-2">Home Accessories</h2>
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-5xl font-semibold mb-2">
+          Home Accessories
+        </h2>
         <div className="w-20 h-1 bg-amber-800 mx-auto"></div>
         <p className="mt-4 max-w-2xl mx-auto">
-        Complete your vintage home with our curated selection of classic home accessories
+          Complete your vintage home with our curated selection of classic home
+          accessories
         </p>
       </div>
-      {/* <div>
-        <h2  className="text-center text-inter text-4xl font-medium max-w-2xl mx-auto text-white">Home Accessories</h2>
-        <p className="text-center max-w-2xl mx-auto text-white/80 mb-12">Complete your vintage home with our curated selection of classic home accessories</p>
-      </div> */}
-      {/* grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center items-center */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
-        {theAccessories.map((accessory, index) => (
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {theAccessories.map((item, index) => (
           <AccessoriesCard
             key={index}
-            image={accessory.image}
-            title={accessory.title}
+            image={item.image}
+            title={item.title}
+            text={item.text}
+            tag={item.tag}
             index={index}
-            tag={accessory.tag}
           />
         ))}
       </div>
     </motion.section>
   );
 });
-
-
-
-// export const Accessories: React.FC = () => {
-// };
