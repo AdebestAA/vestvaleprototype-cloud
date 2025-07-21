@@ -15,7 +15,7 @@ export const countryPropertyData: Record<
   }
 > = {
   russia: {
-    title: "About our Properties",
+    title: "Russian Decors",
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
@@ -29,7 +29,7 @@ export const countryPropertyData: Record<
     ],
   },
   china: {
-    title: "About our Home Accessories",
+    title: "Chinese Decors",
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
@@ -40,7 +40,7 @@ export const countryPropertyData: Record<
     ],
   },
   italy: {
-    title: "About our Home Accessories",
+    title: "Italian Decors",
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
@@ -52,7 +52,7 @@ export const countryPropertyData: Record<
     ],
   },
   morocco: {
-    title: "About our Home Accessories",
+    title: "Moroccan Decors",
     description:
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
