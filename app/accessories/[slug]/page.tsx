@@ -60,7 +60,7 @@ export const accessoriesData: Record<
     
     images: [
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772009/mmexport1748708887089_tjhojd.jpg", text: "light-one", id:"light-one" },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg", text: "light-two", id:"vlight-two" },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772006/mmexport1748708902266_tabbd8.jpg", text: "light-two", id:"light-two" },
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771985/mmexport1748443273048_c37cdg.jpg", text: "light-three" , id:"light-three" },
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771980/mmexport1748443184366_rpcnfp.jpg", text: "light-four" , id:"light-four"},
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771975/L17_fgwgbd.jpg", text: "light-five" , id:"light-five"},
@@ -111,9 +111,9 @@ export const accessoriesData: Record<
       "At Vestvale Estate, we believe luxury is defined by culture, craftsmanship, and timeless design. Each of our interiors is inspired by some of the world’s most iconic and refined aesthetics — offering residents a truly global living experience.",
     images: [
       { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772040/T4_fhom6g.png", text: "title" , id:"tile-one"  },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T2_dvgxgw.png", text: "title" , id:"tite-two"  },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "title" , id:"tite-three" },
-      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "title" , id:"tite-four" },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T2_dvgxgw.png", text: "title" , id:"tile-two"  },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "title" , id:"tile-three" },
+      { image: "https://res.cloudinary.com/dnoycjq2q/image/upload/v1752772038/T3_l1iiuu.png", text: "title" , id:"tile-four" },
    
     ],
   },
