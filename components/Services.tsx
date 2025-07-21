@@ -8,7 +8,7 @@ const serviceItem = [
     image: "/house-icon.svg",
     heading: "Luxury Real Estate Development",
     paragraph:
-      `We design , build and provide premium  Estate Villa's, Apartments,Skyscrapers,Lands for sale,Hospital buildings,Schools`,
+      `We design, build and provide Premium Estate Villas 🏘️, Apartments 🏢, Skyscrapers 🌆, Lands for sale 🏞️, Hospital buildings 🏥, Schools 🏫`,
   },
   {
     id: 2,

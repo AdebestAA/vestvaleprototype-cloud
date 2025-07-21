@@ -21,7 +21,7 @@ const FooterSection = () => {
         {/* Logo Centered Above */}
         <div className="">
           <Image
-            src="/vest-logo.png"
+            src="https://res.cloudinary.com/dnoycjq2q/image/upload/v1752771973/logo1_m5rvdz.png"
             alt="Vestvale logo"
             width={80}
             height={80}
@@ -68,9 +68,9 @@ const FooterSection = () => {
           <div className="flex-1">
             <h3 className="text-lg font-bold text-[#361B06]">Home Accessorites</h3>
             <ul className="mt-4 space-y-4">
-              {["Door handle", "Wallpapaer", "lights","doors","tiles"].map((item) => (
+              {["Door handles", "Wallpapers", "Lights","Doors","Tiles"].map((item) => (
                 <li key={item}>
-                  <a href="#properties" className="hover:text-white transition-colors capitalize">
+                  <a href="#properties" className="hover:text-white transition-colors">
                     {item}
                   </a>
                 </li>
@@ -98,7 +98,7 @@ const FooterSection = () => {
         <h3 className="text-lg font-bold text-[#361B06]">Our Offices</h3>
 
         <div className="mt-4 space-y-4">
-          <p className="max-w-[60%]">123, Adeola odeku street, Victoria Island. Lagos-State</p>
+          <p className="max-w-[60%]">123, Adeola Odeku street, Victoria Island. Lagos-State</p>
           <p>12, Jabi Abuja.</p>
         </div>
 
@@ -127,21 +127,36 @@ const FooterSection = () => {
 
         <div className="flex flex-col">
 <div className="flex space-x-4">
-            {[FaTwitter, FaInstagram, FaLinkedin].map((Icon, i) => (
-              <a key={i} href="#" className="hover:text-white transition-colors">
-                <Icon size={20} />
-              </a>
-            ))}
+            {[
+  { Icon: FaTwitter, href: "https://twitter.com/yourhandle" },
+  { Icon: FaInstagram, href: "https://instagram.com/yourhandle" },
+  { Icon: FaLinkedin, href: "https://linkedin.com/in/yourhandle" },
+].map(({ Icon, href }, i) => (
+  <a
+    key={i}
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition-colors"
+  >
+    <Icon size={20} />
+  </a>
+))}
+
           </div>
           <ul className="flex flex-col space-y-4 text-sm mt-4">
-            {["Privacy Policy", "Cookie Policy", "Security"].map((item) => (
-              <li key={item}>
-                <a href="#" className="hover:text-white transition-colors">
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
+  {[
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Cookie Policy", href: "/cookie-policy" },
+    { label: "Security", href: "/security" },
+  ].map((item) => (
+    <li key={item.label}>
+      <a href={item.href} target="_blank" className="hover:text-white transition-colors">
+        {item.label}
+      </a>
+    </li>
+  ))}
+</ul>
 </div>
 
 
