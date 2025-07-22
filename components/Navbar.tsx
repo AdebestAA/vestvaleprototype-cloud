@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { button } from "framer-motion/client";
+import GTranslate from "@/app/utils/Gtranslate";
 
 type SectionKey =
   | "navbar"
@@ -149,10 +150,11 @@ return <button className="text-center text-black py-1 hover:bg-white cursor-poin
 
 {/* language switcher btn */}
 <div className="hidden md:block " >
+<GTranslate/>
            <button 
            onClick={toggleLanguageSwitcher}
            ref={languageSwitcherBtn}
-           className="cursor-ponter"> <Image src={"/language-switcher.svg"}
+           className="cursor-ponter hidden"> <Image src={"/language-switcher.svg"}
            width={50}
            height={30}
            className="cursor-pointer" alt="language switcher "  /></button>
@@ -164,10 +166,11 @@ return <button className="text-center text-black py-1 hover:bg-white cursor-poin
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center space-x-4">
           {/* language */}
+          <GTranslate/>
         <button 
            onClick={toggleLanguageSwitcher}
            ref={languageSwitcherBtnMobile}
-           className="cursor-ponter"> <Image src={"/language-switcher.svg"}
+           className="cursor-ponter hidden"> <Image src={"/language-switcher.svg"}
            width={30}
            height={30}
            className="cursor-pointer" alt="language switcher "  /></button>

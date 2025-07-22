@@ -13,7 +13,54 @@ const sectionVariants = {
     transition: { delay: i * 0.2, duration: 0.6 },
   }),
 };
+// "Russia", "Italy", "China","Morocco"
 
+const countryLinkTag = [
+  {
+  id:1,
+  name:"Russia",
+  link:"/country/russia"
+},
+  {
+  id:2,
+  name:"Italy",
+  link:"/country/italy"
+},
+  {
+  id:3,
+  name:"China",
+  link:"/country/china"
+},
+  {
+  id:4,
+  name:"Morocco",
+  link:"/country/morocco"
+},
+
+]
+
+const interiorLinkTag =[
+  {id:1,
+    name:"Door Handles",
+    link:"accessories/door-handles"
+  },
+  {id:2,
+    name:"Wallpapaers",
+    link:"accessories/wallpapers"
+  },
+  {id:3,
+    name:"Lights",
+    link:"accessories/lights"
+  },
+  {id:4,
+    name:"Doors",
+    link:"accessories/doors"
+  },
+  {id:4,
+    name:"Tiles",
+    link:"accessories/tiles"
+  },
+]
 const FooterSection = () => {
   return (
     <footer className="bg-[#D3BD9E] text-black py-12 sm:py-16 font-inter overflow-x-hidden px-4 lg:px-0">
@@ -68,10 +115,10 @@ const FooterSection = () => {
           <div className="flex-1">
             <h3 className="text-lg font-bold text-[#361B06]">Home Accessorites</h3>
             <ul className="mt-4 space-y-4">
-              {["Door handles", "Wallpapers", "Lights","Doors","Tiles"].map((item) => (
-                <li key={item}>
-                  <a href="#properties" className="hover:text-white transition-colors">
-                    {item}
+              {interiorLinkTag.map((item) => (
+                <li key={item.id}>
+                  <a href={item.link} className="hover:text-white transition-colors">
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -82,10 +129,10 @@ const FooterSection = () => {
           <div className="flex-1 space-y-4">
             <h3 className="text-lg font-bold text-[#361B06]">Interior Decoration</h3>
             <ul className="space-y-4">
-              {["Russia", "Italy", "China","Morocco"].map((item) => (
-                <li key={item}>
-                  <a href="#appliances" className="hover:text-white transition-colors">
-                    {item}
+              {countryLinkTag.map((item) => (
+                <li key={item.id}>
+                  <a href={item.link} className="hover:text-white transition-colors">
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -105,7 +152,7 @@ const FooterSection = () => {
 
 
 
-
+        
 
           {/* <div className="flex space-x-4">
             {[FaTwitter, FaInstagram, FaLinkedin].map((Icon, i) => (

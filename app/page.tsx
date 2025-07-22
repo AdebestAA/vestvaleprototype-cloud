@@ -14,6 +14,7 @@ import Services from '@/components/Services';
 import { Accessories } from '@/components/AccessoriesCard';
 import OurPartners from '@/components/OurPartners';
 import WhatOurCustomersSay from '@/components/WhatOurCustomersSay';
+import GTranslate from './utils/Gtranslate';
 
 
 export default function HomePage() {
@@ -40,6 +41,7 @@ export default function HomePage() {
 
   return (
     <main className='bg-[#17120F] '>
+      
       <Navbar  onNavClick={scrollToSection} />
       <Hero ref={sections.hero} />
       <OurStory ref={sections.about} />

@@ -39,3 +39,39 @@ body {
 html, body {
   overflow-x: hidden;
 }
+
+
+
+.gtranslate_wrapper {
+  background-color: #f0f0f0; 
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.gtranslate_wrapper .gt_selector {
+  background-color: #ffffff ;
+  border: 1px solid #ccc ;
+  border-radius: 4px ;
+  padding: 6px 10px ;
+  font-size: 14px ;
+  color: #333 ;
+  width: 100% ;
+}
+
+
+.gtranslate_wrapper .gt_selector option {
+  background-color: #ffffff;
+  color: #000;
+}
+
+@media screen and  (max-width:500px) {
+  /* .gtranslate_wrapper .gt_selector{
+    width: 50px !important ;
+    
+  } */
+  .gtranslate_wrappe{
+    max-width: 100px !important ;
+
+  }
+}
