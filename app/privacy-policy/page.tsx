@@ -1,6 +1,18 @@
+"use client"
+import { IoArrowBackSharp } from "react-icons/io5";
+import { useRouter } from "next/navigation";
+
 export default function PrivacyPolicyPage() {
+
+const router = useRouter()
   return (
     <main className="max-w-3xl mx-auto py-12 px-4 text-white">
+      <div className="my-4">
+<button onClick={()=> router.push("/")} className="bg-[#ededed] px-2 rounded-lg cursor-pointer">
+<IoArrowBackSharp className="text-2xl text-black " />
+</button>
+      </div>
+      
       <h1 className="text-3xl font-bold mb-6">🔒 Privacy Policy</h1>
 
       <p className="mb-4">

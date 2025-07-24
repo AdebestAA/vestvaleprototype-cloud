@@ -86,7 +86,7 @@ const FooterSection = () => {
         </div> */}
 
         {/* Flex Grouped Sections */}
-        <section className="flex lg:flex-row flex-col space-y-4 justify-between my-6">
+        <section className="flex lg:flex-row flex-col space-y-4 justify-between my-6 gap-x-4">
 
 {/* motion div */}
         {/* <motion.div
@@ -126,7 +126,7 @@ const FooterSection = () => {
           </div>
 
           {/* Interior Decoration */}
-          <div className="flex-1 space-y-4">
+          <div className="flex-1 space-y-4 ">
             <h3 className="text-lg font-bold text-[#361B06]">Interior Decoration</h3>
             <ul className="space-y-4">
               {countryLinkTag.map((item) => (
@@ -140,13 +140,15 @@ const FooterSection = () => {
           </div>
 
         {/* Our Office */}
-        <div className=" flex flex-col  ">
+        <div className=" flex flex-col  flex-1 ">
 
         <h3 className="text-lg font-bold text-[#361B06]">Our Offices</h3>
 
-        <div className="mt-4 space-y-4">
-          <p className="max-w-[60%]">123, Adeola Odeku street, Victoria Island. Lagos-State</p>
-          <p>12, Jabi Abuja.</p>
+      <div className=" flex ">
+        {/* info@vestvaleestate.com */}
+        <a href="mailto:info@vestvaleestate.com" className="">info@vestvaleestate.com</a>
+          {/* <p className="max-w-[60%]">123, Adeola Odeku street, Victoria Island. Lagos-State</p>
+          <p>12, Jabi Abuja.</p> */}
         </div>
 
 
